@@ -4,23 +4,97 @@ title: blog
 # Note that this index page uses a full-width layout!
 ---
 
-  <h1 class="content-listing-header sans">Overblik</h1>
-    <ul class="content-listing-header">
-      <li class="listing">some test</li>
-    {% for post in site.posts %}      
-        <li class="listing">
-          <hr class="slender">
-          <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
-          <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
-          <div>{{ post.excerpt }}</div> 
-          <div class="tags">
+<div class="row">
+  
+  <div class="col-md-9">
 
-            {% assign tags = post.tag | split: ', ' %}
+      <ul class="content-listing">
+    
+         
+        {% for post in site.posts limit:1 %}  
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          
+          <div class="col">
+            <!-- <div class="col-auto d-none d-lg-block"> -->
+              <div>{% include D3/MagtensElite.html %}</div> 
+    
+            </div>
+         
+          <div class="col-sm-12">
+          <!-- <div class="col p-4 d-flex flex-column position-static"> -->
+          <li class="listing">
+              
+              <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+              <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+              <div>{{ post.excerpt }}</div> 
+              <div class="tags">
 
-            {% for t in tags %}
-              <a class="{{ t }}">{{ t }}</a>
-            {% endfor %}
+                {% assign tags = post.tag | split: ', ' %}
+
+                {% for t in tags %}
+                  <a type="button" class="{{ t }} btn btn-outline-dark">{{ t }}</a>
+                {% endfor %}
+              </div>
+              
+              
+            </li>
           </div>
-        </li>
-    {% endfor %}
-  </ul>
+         
+          </div>
+            
+        {% endfor %}
+        <div class="row">
+        {% for post in site.posts offset:1 limit:6 %}
+      
+          <div class="col-sm-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col">
+            <!-- <div class="col-auto d-none d-lg-block"> -->
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+            </div>
+          <div class="col-sm-6">
+          
+          <!-- <div class="col p-4 d-flex flex-column position-static"> -->
+          <li class="listing">
+              
+              <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
+              <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
+              <div>{{ post.excerpt }}</div> 
+              <div class="tags">
+
+                {% assign tags = post.tag | split: ', ' %}
+
+                {% for t in tags %}
+                  <a type="button" class="{{ t }} btn btn-outline-dark">{{ t }}</a>
+                {% endfor %}
+              </div>
+              
+              
+            </li>
+          </div>
+         
+          </div>
+          </div>
+  
+        {% endfor %}
+      </div>
+      </ul>
+    </div>
+
+   
+    <div class="col-md-3">
+      <div class="sticky-top"> 
+      <h3 class="my-3">Project Description</h3>
+      <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</a>
+      <h3 class="my-3">Project Details</h3>
+      <ul>
+        <li>Lorem Ipsum</li>
+        <li>Dolor Sit Amet</li>
+        <li>Consectetur</li>
+        <li>Adipiscing Elit</li>
+      </ul>
+    </div>
+    </div>  
+    
+</div>

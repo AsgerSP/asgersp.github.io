@@ -1,4 +1,4 @@
-I")Å<h2 id="introduction">Introduction</h2>
+I"Å<h2 id="introduction">Introduction</h2>
 
 <p><span class="newthought">The Tufte Jekyll theme</span>  is an attempt to create a website design with the look and feel of Edward Tufte‚Äôs books and handouts. Tufte‚Äôs style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography.<!--more--> The idea for this project is essentially cribbed wholesale from Tufte and R Markdown‚Äôs Tufte Handout format<label for="One" class="margin-toggle sidenote-number"></label><input type="checkbox" id="One" class="margin-toggle" /><span class="sidenote">See <a href="https://tufte-latex.github.io/tufte-latex/">tufte-latex.github.io/tufte-latex/</a> and <a href="http://rmarkdown.rstudio.com/tufte_handout_format.html">rmarkdown.rstudio.com/tufte_handout_format</a> </span>. This page is an adaptation of the <a href="http://rmarkdown.rstudio.com/examples/tufte-handout.pdf">Tufte Handout PDF</a>.</p>
 
@@ -104,11 +104,11 @@ While this Jekyll theme supports more specific headings, if you feel the urge to
 
 <p>Besides margin and full width figures, you can of course also include figures constrained to the main column. Yes, you guessed it, a custom liquid tag rides to the rescue once again:</p>
 
-<p><code class="language-plaintext highlighter-rouge">{% maincolumn 'assets/img/export-imports.png' 'From Edward Tufte, *Visual Display of Quantitative Information*, page 92'  %}</code></p>
+<p><code class="language-plaintext highlighter-rouge">{% maincolumn 'assets/img/rhino.png' 'From Edward Tufte, *Visual Display of Quantitative Information*, page 92'  %}</code></p>
 
 <p>yields this:</p>
 
-<figure><figcaption>From Edward Tufte, *Visual Display of Quantitative Information*, page 92</figcaption><img src="/assets/img/exports-imports.png" /></figure>
+<figure><figcaption>From Edward Tufte, *Visual Display of Quantitative Information*, page 92</figcaption><img src="/assets/img/rhino.png" /></figure>
 
 <h2 id="sidenotes-and-margin-notes">Sidenotes and Margin notes</h2>
 

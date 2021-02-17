@@ -33,7 +33,7 @@ html, body { height: 100%; }
 
 //* THIS IS MY OWN PERSONAL ADD-INS - ASP */
 
-div.tags a.post {
+div.tags a.post  {
   background-color: #3adb76; 
   padding: 5px;
  }
@@ -43,6 +43,33 @@ div.tags a.post {
    padding: 5px;
   }
 //* END OF ADD-INS */ 
+
+// THIS IS PERSONAL FOR HEADER //
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+// THIS IS PERSONAL FOR HEADER END //
+
+//PERSONAL ARTICLE /
+
+.article {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5%;
+}
+
 
 // First significant deviation from CSS on tufte.css site - variable font size as browser width expands or contracts
 //html { font-size: 15px; }
@@ -90,14 +117,15 @@ p > a { @if $link-style == underline
     }
   }
 
-body { width: 87.5%;
-       margin-left: auto;
-       margin-right: auto;
-       padding-left: 12.5%;
+  
+body { width: 100%;
+      //  margin-left: auto;
+      //  margin-right: auto;
+      //  padding-left: 12.5%;
        font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
        background-color: $bg-color;
        color: $text-color;
-       max-width: 1400px;
+      //  max-width: 1400px;
        counter-reset: sidenote-counter; }
 
 // --------- Typography stuff -----------//
@@ -354,7 +382,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 //Nav and Footer styling area
 
 header > nav.group, body footer {
-  width: 95%;
+  width: 100%;
   padding-top: 2rem;
 }
 
@@ -409,10 +437,11 @@ ul.footer-links li{
 
 //Full width page styling stuff
 
-body.full-width, .content-listing, ul.content-listing li.listing{ width: 90%;
+ .content-listing, ul.content-listing li.listing
+{ width: 90%;
        margin-left: auto;
        margin-right: auto;
-       padding: 0% 5%;
+       padding: 5% 5%;
 
 }
 .full-width article p{
