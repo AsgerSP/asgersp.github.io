@@ -42,16 +42,25 @@ div.tags a.post  {
    background-color: yellow; 
    padding: 5px;
   }
+
+  .sharebutons {
+    width: 100%;
+  }
+
+  .m-0 {
+    width: 100%;
+  }
 //* END OF ADD-INS */ 
 
 // THIS IS PERSONAL FOR HEADER //
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
+  height: 123px;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  // font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 2.25rem;
 }
 
@@ -99,7 +108,7 @@ html{
   font-size: 1.3rem;
 }
 a {
-  color: $contrast-color;
+  color:#fffff8;
   text-decoration: none;
 }
 
@@ -122,7 +131,8 @@ body { width: 100%;
       //  margin-left: auto;
       //  margin-right: auto;
       //  padding-left: 12.5%;
-       font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      //  font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+       font-family: RobotoMono, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
        background-color: $bg-color;
        color: $text-color;
       //  max-width: 1400px;
@@ -165,7 +175,7 @@ p, ol, ul { font-size: 1.4rem; }
 
 p, li { line-height: 2rem;
         margin-top: 1.4rem;
-        padding-right: 2rem; //removed because,  why?
+        // padding-right: 2rem; //removed because,  it doesn't fit
         vertical-align: baseline; }
 
 blockquote p {  font-size: 1.1rem;
@@ -331,7 +341,7 @@ pre, pre code, p pre code { width: 52.5%;
            padding-left: 2.5%;
            overflow-x: auto; }
 
-.fullwidth, li.listing div{ max-width: 90%; }
+// .fullwidth, li.listing div{ max-width: 90%; }
 
 .full-width { .sidenote, .sidenote-number, .marginnote { display: none; } }
 
@@ -438,15 +448,15 @@ ul.footer-links li{
 //Full width page styling stuff
 
  .content-listing, ul.content-listing li.listing
-{ width: 90%;
+{ width: 100%;
        margin-left: auto;
        margin-right: auto;
-       padding: 5% 5%;
+       padding: 2% 2%;
 
 }
-.full-width article p{
-  width: 90%;
-}
+// .full-width article p{
+//   width: 90%;
+// }
 
 
 h1.content-listing-header{
@@ -456,9 +466,9 @@ h1.content-listing-header{
   font-size: 1.8rem;
 }
 
-li.listing hr{
-  width:100%;
-}
+// li.listing hr{
+//   width:100%;
+// }
 .listing, .listing h3
 {
   display: inline-block;
@@ -472,24 +482,24 @@ li.listing {
 }
 
 
-li.listing:last-of-type{
-  border-bottom: none;
-  margin-bottom: 1.4rem;
-}
+// li.listing:last-of-type{
+//   border-bottom: none;
+//   margin-bottom: 1.4rem;
+// }
 li.listing h3.new {
   text-transform: uppercase;
   font-style: normal;
 }
-hr.slender {
-    border: 0;
-    height: 1px;
-    margin-top: 1.4rem;
-    margin-bottom:1.4rem;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
+// hr.slender {
+//     border: 0;
+//     height: 1px;
+//     margin-top: 1.4rem;
+//     margin-bottom:1.4rem;
+//     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+//     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+//     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+//     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+// }
 // End of front listing page stuff
 
 
@@ -582,7 +592,7 @@ hr.slender {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color: $contrast-color;
+  color: #fffff8;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -637,4 +647,5 @@ hr.slender {
 .icon-box-add:before {
   content: "\e60e";
 }
+
 /*-- End of Icomoon icon font section --*/
