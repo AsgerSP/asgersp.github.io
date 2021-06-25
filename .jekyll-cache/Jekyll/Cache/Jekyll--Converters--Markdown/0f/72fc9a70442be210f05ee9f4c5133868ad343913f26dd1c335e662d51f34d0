@@ -1,4 +1,4 @@
-I"p#<p>Some edge cases and cautionary examples on using Markdown for writing content using this theme. In particular, list syntax can really knot things up.
+I"x#<p>Some edge cases and cautionary examples on using Markdown for writing content using this theme. In particular, list syntax can really knot things up.
 <!--more--></p>
 
 <ul id="markdown-toc">
@@ -169,5 +169,5 @@ D = \left(\begin{matrix}
 
 <p>This code: <code class="language-plaintext highlighter-rouge">{% fullwidth "assets/img/rhino.png" "Tufte pet rhino (via &lt;a href=\"//www.edwardtufte.com/tufte/\"&gt;Edward Tufte&lt;/a&gt;)"  %}</code></p>
 
-<figure class="fullwidth"><img src="/assets/img/rhino.png" /><figcaption>Tufte's pet rhino (via <a href="//www.edwardtufte.com/tufte/">Edward Tufte</a>)</figcaption></figure>
+<figure class="fullwidth"><img src="/asgersp/assets/img/rhino.png" /><figcaption>Tufte's pet rhino (via <a href="//www.edwardtufte.com/tufte/">Edward Tufte</a>)</figcaption></figure>
 :ET
