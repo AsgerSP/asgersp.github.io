@@ -1,0 +1,22 @@
+{
+  "name": "tufte-jekyll-master",
+  "version": "1.0.0",
+  "description": "This site has been changed from the tufte-jekyll theme to a more general blog-site.  It is called imargin as in \"in the margin\" (danish translation).",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsgerSP/tufte-jekyll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AsgerSP/tufte-jekyll/issues"
+  },
+  "homepage": "https://github.com/AsgerSP/tufte-jekyll#readme",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
