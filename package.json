@@ -4,7 +4,7 @@
   "description": "This site has been changed from the tufte-jekyll theme to a more general blog-site.  It is called imargin as in \"in the margin\" (danish translation).",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d _site"
   },
   "repository": {
     "type": "git",

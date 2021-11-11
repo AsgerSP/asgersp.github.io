@@ -147,6 +147,10 @@ div.tags a.jekyll { background-color: yellow; padding: 5px; }
 
 .m-0 { width: 100%; }
 
+footer a.twitter a.twitter { color: seagreen; }
+
+a svg { fill: currentColor; }
+
 .blog-header { line-height: 1; border-bottom: 1px solid #e5e5e5; height: 123px; }
 
 .blog-header-logo { font-size: 2.25rem; }
@@ -175,7 +179,7 @@ a { color: #fffff8; text-decoration: none; }
 
 p > a { color: #a00000; text-decoration: none; }
 
-body { width: 100%; font-family: RobotoMono, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; background-color: white; color: #111; counter-reset: sidenote-counter; }
+body { width: 100%; font-family: Roboto, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; background-color: white; color: #111; counter-reset: sidenote-counter; }
 
 h1 { font-weight: 400; margin-top: 1.568rem; margin-bottom: 1.568rem; font-size: 2.5rem; line-height: 0.784; }
 
