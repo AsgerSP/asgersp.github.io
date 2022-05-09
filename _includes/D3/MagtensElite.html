@@ -1,12 +1,10 @@
-<div id="observablehq-a72e1f1b">
-  <div class="observablehq-viewof-filterId"></div>
+<div id="observablehq-b64b6fe8">
   <div class="observablehq-chart"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@asgersp/d3-force-directed-graph-with-input.js?v=3";
+  import define from "https://api.observablehq.com/@asgersp/force-directed-graph.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "viewof filterId") return Inspector.into("#observablehq-a72e1f1b .observablehq-viewof-filterId")();
-    if (name === "chart") return Inspector.into("#observablehq-a72e1f1b .observablehq-chart")();
+    if (name === "chart") return Inspector.into("#observablehq-b64b6fe8 .observablehq-chart")();
   });
 </script>

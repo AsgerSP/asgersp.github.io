@@ -6,8 +6,13 @@ To see more information regarding the original them, please see https://github.c
 
 # Firebase
 Firebase deploy
-type "npm run deploy"
+
+type
+"jekyll build"
+"npm run deploy"
 
 https://imarginproject.firebaseapp.com/
 https://imarginproject.web.app/
 
+Crimson - header
+Oxygen - body

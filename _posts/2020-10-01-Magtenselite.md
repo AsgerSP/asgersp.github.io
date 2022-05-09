@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magtens Elite"
+title:  "MAGTENS ELITE"
 date:   2020-10-01 14:18:01
 tag: post, jekyll, css
 d3index: D3/Test2.html
