@@ -139,15 +139,23 @@
 
 html, body { height: 100%; }
 
-div.tags a.post { background-color: #3adb76; padding: 5px; }
+div.tags a.post { background-color: #3adb76; padding: 5px; font-family: Crimson, Oxygen; }
 
-div.tags a.jekyll { background-color: yellow; padding: 5px; }
+div.tags a.jekyll { background-color: yellow; padding: 5px; font-family: Crimson, Oxygen; }
+
+div.tags a.css { padding: 5px; font-family: Crimson, Oxygen; }
 
 .sharebutons { width: 100%; }
 
 .m-0 { width: 100%; }
 
-footer a.twitter a.twitter { color: seagreen; }
+a.twitter { color: #1DA1F2; }
+
+a.linked { color: #0e76a8; }
+
+a.facebook { color: #4267B2; }
+
+a.github { color: #171515; }
 
 a svg { fill: currentColor; }
 
@@ -179,13 +187,17 @@ a { color: #fffff8; text-decoration: none; }
 
 p > a { color: #a00000; text-decoration: none; }
 
-body { width: 100%; font-family: Roboto, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; background-color: white; color: #111; counter-reset: sidenote-counter; }
+a.active { color: #a00000; text-decoration: none; }
 
-h1 { font-weight: 400; margin-top: 1.568rem; margin-bottom: 1.568rem; font-size: 2.5rem; line-height: 0.784; }
+a.passive { color: black; text-decoration: none; }
 
-h2 { font-style: italic; font-weight: 400; margin-top: 1.866666666666667rem; margin-bottom: 0; font-size: 2.1rem; line-height: 0.933333333333333; }
+body { width: 100%; font-family: Oxygen, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; background-color: white; color: #111; counter-reset: sidenote-counter; }
 
-h3 { font-style: italic; font-weight: 400; font-size: 1.8rem; margin-top: 2.1777777777777778rem; margin-bottom: 0; line-height: 1.08888888888889; }
+h1 { font-weight: 400; margin-top: 1.568rem; margin-bottom: 1.568rem; font-size: 2.5rem; line-height: 0.784; font-family: Crimson; }
+
+h2 { font-weight: 400; margin-top: 1.866666666666667rem; margin-bottom: 0; font-size: 2.1rem; line-height: 0.933333333333333; font-family: Crimson; }
+
+h3 { font-weight: 400; font-size: 1.8rem; margin-top: 2.1777777777777778rem; margin-bottom: 0; line-height: 1.08888888888889; font-family: Crimson; }
 
 p .subtitle { font-style: italic; margin-top: 2.1777777777777778rem; margin-bottom: 2.1777777777777778rem; font-size: 1.8rem; display: block; line-height: 1.08888888888889; }
 
@@ -245,7 +257,7 @@ figure.fullwidth figcaption { float: left; margin-right: 0%; margin-left: 36%; }
 
 img { max-width: 100%; }
 
-.sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 1.0rem; line-height: 1.96; vertical-align: baseline; position: relative; }
+.sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 1.0rem; line-height: 1.96; vertical-align: baseline; position: relative; font-family: Crimson, Oxygen; }
 
 li .sidenote, li .marginnote { margin-right: -80%; }
 
