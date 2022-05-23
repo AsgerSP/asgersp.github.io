@@ -16,3 +16,5 @@ $border-color: #333333;
 $link-style: color; // choices are 'color' or 'underline'. Default is color using $contrast-color set above
 
 // NOTE: in order to override some Bootstrap variables, copy-paste a variable from _sass/bootstrap/_variables.scss file and update it's value, e.g. $primary: #ff88aa;
+$primary: #1f77b4;
+$warning: #ff7f0e;

@@ -19,13 +19,6 @@ nav_exclude: true
 @import "../_sass/bootstrap/bootstrap";
 @import "../_sass/syntax-highlighting";
 
-// Global Resets
-//
-* {
-  margin: 0;
-  padding: 0;
-}
-
 /* clearfix hack after Cederholm (group class name) */
 .group:after {
   content: "";
@@ -33,36 +26,19 @@ nav_exclude: true
   clear: both;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 //* THIS IS MY OWN PERSONAL ADD-INS - ASP */
+// .sample-font {
+//   font-family: Crimson, Oxygen;
+// }
 
-div.tags a.post {
-  background-color: #3adb76;
-  padding: 5px;
-  font-family: Crimson, Oxygen;
+canvas {
+  width: 100% !important;
 }
 
-div.tags a.jekyll {
-  background-color: yellow;
-  padding: 5px;
-  font-family: Crimson, Oxygen;
-}
-
-div.tags a.css {
-  padding: 5px;
-  font-family: Crimson, Oxygen;
-}
-
-.sharebutons {
-  width: 100%;
-}
-
-.m-0 {
-  width: 100%;
+.group {
+  p {
+    width: 55%;
+  }
 }
 //* END OF ADD-INS */
 
@@ -160,10 +136,6 @@ html {
 .mathblock {
   font-size: 1.3rem;
 }
-a {
-  color: #fffff8;
-  text-decoration: none;
-}
 
 p > a {
   @if $link-style == underline {
@@ -176,6 +148,7 @@ p > a {
     text-decoration: none;
   }
 }
+
 a.active {
   color: $contrast-color;
   text-decoration: none;
@@ -374,7 +347,7 @@ caption {
 
 article {
   position: relative;
-  padding: 1 rem 0rem 2.5rem 0rem;
+  // padding: 1 rem 0rem 2.5rem 0rem;
 } // reduced top and bottom padding by 50%
 
 section {
@@ -384,7 +357,7 @@ section {
 
 ul,
 ol {
-  width: 45%;
+  // width: 45%;
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%;
   list-style-type: none;
@@ -474,12 +447,12 @@ blockquote .marginnote {
   top: 0rem;
 } //removed superscripting for numerical reference in sidenote
 
-p,
-footer,
-div.table-wrapper,
-div.mathblock {
-  width: 55%;
-}
+// p,
+// footer,
+// div.table-wrapper,
+// div.mathblock {
+//   width: 55%;
+// }
 
 div.table-wrapper {
   overflow-x: auto;
@@ -681,7 +654,7 @@ ul.footer-links li {
 
 // End of Nav and Footer styling area
 
-//Full width page styling stuff
+// Full width page styling stuff
 
 .content-listing,
 ul.content-listing li.listing {
@@ -690,9 +663,6 @@ ul.content-listing li.listing {
   margin-right: auto;
   padding: 2% 2%;
 }
-// .full-width article p{
-//   width: 90%;
-// }
 
 h1.content-listing-header {
   font-style: normal;
@@ -701,9 +671,6 @@ h1.content-listing-header {
   font-size: 1.8rem;
 }
 
-// li.listing hr{
-//   width:100%;
-// }
 .listing,
 .listing h3 {
   display: inline-block;
