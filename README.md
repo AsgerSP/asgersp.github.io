@@ -4,6 +4,10 @@ It is called imargin as in "in the margin" (danish translation).
 
 To see more information regarding the original them, please see https://github.com/clayh53/tufte-jekyll
 
+# Development
+* install https://jekyllrb.com/
+* run `bundle exec jekyll serve`
+
 # Firebase
 Firebase deploy
 
