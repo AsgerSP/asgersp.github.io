@@ -1,10 +1,10 @@
 <div id="observablehq-61d12f9b">
-    <div class="observablehq-canvas"></div>
-  </div>
-  <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@asgersp/voroblobinoids.js?v=3";
-    (new Runtime).module(define, name => {
-      if (name === "canvas") return Inspector.into("#observablehq-61d12f9b .observablehq-canvas")();
-    });
-  </script>
+  <div class="observablehq-canvas"></div>
+</div>
+<script type="module">
+  import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@asgersp/voroblobinoids.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "canvas") return Inspector.into("#observablehq-61d12f9b .observablehq-canvas")();
+  });
+</script>

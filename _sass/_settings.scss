@@ -1,7 +1,6 @@
 // This file contains all the constants for colors and font styles (both tufte and bootstrap)
 
-$body-font: Lato, ETbook, Palatino, "Palatino Linotype", "Palatino LT STD",
-  "Book Antiqua", Georgia, serif;
+$body-font: "Source Serif Pro", serif;
 // Note that Gill Sans is the top of the stack and corresponds to what is used in Tufte's books
 // However, it is not a free font, so if it is not present on the computer that is viewing the webpage
 // The free Google 'Lato' font is used instead. It is similar.
@@ -15,7 +14,12 @@ $contrast-color: #a00000;
 $border-color: #333333;
 $link-style: color; // choices are 'color' or 'underline'. Default is color using $contrast-color set above
 
+$body-top-padding: 111px; // NOTE current top navbar height
+
 // NOTE: in order to override some Bootstrap variables, copy-paste a variable from _sass/bootstrap/_variables.scss file and update it's value, e.g. $primary: #ff88aa;
 $primary: #1f77b4;
 $warning: #ff7f0e;
 $contrast-color: $warning;
+$font-family-base: $body-font;
+$headings-font-family: $body-font;
+$headings-font-weight: 700;

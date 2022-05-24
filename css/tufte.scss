@@ -32,7 +32,8 @@ nav_exclude: true
 // }
 
 canvas {
-  width: 100% !important;
+  // width: 100% !important;
+  min-height: 265px !important; // TODO/NOTE temporary style to match the height of the cover images
 }
 
 .full-width {
@@ -68,7 +69,7 @@ canvas {
 
 footer {
   @media screen and (min-width: 800px) {
-    margin-top: 8rem;
+    margin-top: 15rem;
   }
 }
 //* END OF ADD-INS */
@@ -114,7 +115,7 @@ a svg {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12.5%;
+  // padding-left: 12.5%; // NOTE i've disabled this padding to align it with the heading
 }
 
 // First significant deviation from CSS on tufte.css site - variable font size as browser width expands or contracts
@@ -192,49 +193,17 @@ a.passive {
 
 body {
   width: 100%;
-  //  margin-left: auto;
-  //  margin-right: auto;
-  //  padding-left: 12.5%;
-  //font-family: et-bembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-  font-family: Oxygen, Palatino, "Palatino Linotype", "Palatino LT STD",
-    "Book Antiqua", Georgia, serif;
   background-color: $bg-color;
   color: $text-color;
-  //  max-width: 1400px;
   counter-reset: sidenote-counter;
+  padding-top: $body-top-padding;
 }
 
 // --------- Typography stuff -----------//
 // added rational line height and margins ala http://webtypography.net/intro/
-
-h1 {
-  font-weight: 400;
-  margin-top: 1.568rem;
-  margin-bottom: 1.568rem;
-  font-size: 2.5rem;
-  line-height: 0.784;
-  font-family: Crimson;
-} //own changes made to headers
-
-h2 {
-  font-weight: 400;
-  margin-top: 1.866666666666667rem;
-  margin-bottom: 0;
-  font-size: 2.1rem;
-  line-height: 0.933333333333333;
-  font-family: Crimson;
-} //own changes made to headers
-
-h3 {
-  font-weight: 400;
-  font-size: 1.8rem;
-  margin-top: 2.1777777777777778rem;
-  margin-bottom: 0;
-  line-height: 1.08888888888889;
-  font-family: Crimson;
-} //own changes made to headers
-
+// ...but removed upon clean-up
 // ET says a need for more than 3 levels of headings is the sign of a diseased mind
+// TT agrees :)
 
 p .subtitle {
   font-style: italic;

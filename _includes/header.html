@@ -1,31 +1,23 @@
 <!--- Header and nav template site-wide -->
-<nav class="navbar navbar-expand navbar-light">
-	<div class="container">
-		<a href="{{site.baseurl}}/"><img class="badge" src="{{site.baseurl}}/assets/img/badge_1.png" alt="CH"></a>
+<div class="container fixed-top bg-white">
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+		<a href="{{site.baseurl}}/"
+			class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<img class="" src="{{site.baseurl}}/assets/img/logo-blob.svg" alt="Datadreven Blog" width="50" height="50">
+			<span class="fs-2">Data<span class="text-primary">dreven</span></span>
+		</a>
 
-		{% for node in site.pages %}
-		{% unless node.nav_exclude %}
-		{% if page.url == node.url %}
-		<a class="active" href="{{node.url | prepend: site.baseurl}}" class="active">{{node.title}}</a>
-		{% else %}
-		<a class="passive" href="{{node.url | prepend: site.baseurl}}">{{node.title}}</a>
-		{% endif %}
-		{% endunless %}
-		{% endfor %}
-	</div>
-</nav>
-<div class="container">
-	<div class="row align-items-center">
-		<div class="col-md-4 text-center text-md-start order-md-2">
-			<h1 class="display-4 fw-bold lh-1 mb-3">
-				Datadreven Blog
-			</h1>
-			<p class="fs-4 w-100">
-				Noget mere tekst skal stå her
-			</p>
-		</div>
-		<div class="col-md-4 offset-md-2 order-md-1 text-center">
-			{% include D3/MagtensElite.html %}
-		</div>
-	</div>
+		<ul class="nav nav-pills">
+			{% for node in site.pages %}
+			{% unless node.nav_exclude %}
+			{% if page.url == node.url %}
+			<li class="nav-item mt-0"><a href="{{node.url | prepend: site.baseurl}}" class="nav-link active"
+					aria-current="page">{{node.title}}</a></li>
+			{% else %}
+			<li class="nav-item mt-0"><a href="{{node.url | prepend: site.baseurl}}" class="nav-link">{{node.title}}</a></li>
+			{% endif %}
+			{% endunless %}
+			{% endfor %}
+		</ul>
+	</header>
 </div>
