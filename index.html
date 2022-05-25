@@ -7,7 +7,7 @@ title: Blog
   <div class="col-md-8">
     {% for post in site.posts limit:1 %}
     <div class="card mb-4 overflow-hidden border-0">
-      <div class="x-card-img-top">
+      <div class="rounded">
         {% include {{post.d3index}} %}
       </div>
 
@@ -33,7 +33,12 @@ title: Blog
 
       <div class="col-sm-6 mb-4">
         <div class="card h-100 border-0">
-          <img src="{{ post.coverphoto }}" class="x-card-img-top rounded" alt="TODO">
+          <div class="rounded overflow-hidden d-flex align-items-center justify-content-start bg-light" style="height: 233px;">
+            <!-- NOTE/TODO set the aspect ratio and negative margins once the 'cover photo' chart dimensions are finalized -->
+            <div style="margin: -100px -1px;">
+              {% include {{post.d3index}} %}
+            </div>
+          </div>
           <div class="card-body d-flex flex-column px-0">
             <div class="flex-grow-1">
               <h3 class="card-title m-0"><a href="{{ post.url | prepend: site.baseurl }}" class="x-stretched-link">{{

@@ -45,10 +45,18 @@ canvas {
 .group {
   article,
   .article {
+    h1,
+    h2,
+    h3,
     p,
+    ol,
+    ul,
+    blockquote,
+    .highlight,
     .table-wrapper,
-    .mathblock {
-      width: 55%;
+    .mathblock,
+    .chart-container {
+      width: 66%;
 
       @media (max-width: 760px) {
         width: 90%;
@@ -58,11 +66,6 @@ canvas {
     table,
     .booktabs {
       margin-left: 0;
-    }
-
-    ol,
-    ul {
-      width: 45%;
     }
   }
 }
@@ -197,6 +200,14 @@ body {
   color: $text-color;
   counter-reset: sidenote-counter;
   padding-top: $body-top-padding;
+
+  @include media-breakpoint-up(md) {
+    padding-top: $body-top-padding-md;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $body-top-padding-lg;
+  }
 }
 
 // --------- Typography stuff -----------//
@@ -368,7 +379,7 @@ ol {
 
 figure,
 figure img.maincolumn {
-  max-width: 55%;
+  max-width: 66%;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
   margin-bottom: 3em;
@@ -401,8 +412,8 @@ img {
 .marginnote {
   float: right;
   clear: right;
-  margin-right: -60%;
-  width: 50%;
+  margin-right: -38%;
+  width: 33%;
   margin-top: 0;
   margin-bottom: 1.96rem;
   font-size: 1rem;
@@ -412,14 +423,16 @@ img {
   font-family: Crimson, Oxygen;
 } //own changes made to sidenotes
 
-li .sidenote,
-li .marginnote {
-  margin-right: -80%;
-} //added to allow for the fact that lists are indented and marginnotes and sidenotes push to right
+li,
+blockquote {
+  .sidenote,
+  .marginnote {
+    margin-right: -36%; // added to allow for the fact that lists are indented and marginnotes and sidenotes push to right
+  }
 
-blockquote .sidenote,
-blockquote .marginnote {
-  margin-right: -79%;
+  p {
+    width: 100% !important;
+  }
 }
 
 .sidenote-number {
