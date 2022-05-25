@@ -15,6 +15,36 @@
             <!-- <p><img src="{{ page.coverphoto }}" class="img-fluid rounded" alt="TODO"></p> -->
             <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
             {{ content }}
+
+            <div class="sticky-top-article mb-4">
+                <div class="card mb-4 bg-light border-0">
+                    <div class="card-body d-flex flex-column">
+                        <div class="flex-grow-1">
+                            <h3 class="mt-0">Project Description</h3>
+                            <p class="lh-1 text-muted"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nam
+                                    viverra euismod
+                                    odio, gravida pellentesque urna
+                                    varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris
+                                    ultricies, justo eu
+                                    convallis placerat, felis enim.</small></p>
+                            <div class="d-grid">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                            {% include share.html %}
+                        </div>
+
+                        {% assign tags = page.tag | split: ', ' %}
+                        <ul class="list-inline mb-0">
+                            {% for t in tags %}
+                            <li class="list-inline-item"><span class="btn btn-sm btn-outline-warning">{{ t }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     {% include print-footer.html %}

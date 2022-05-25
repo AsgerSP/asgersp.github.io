@@ -77,19 +77,6 @@ footer {
 }
 //* END OF ADD-INS */
 
-a.twitter {
-  color: #1da1f2;
-}
-a.linked {
-  color: #0e76a8;
-}
-a.facebook {
-  color: #4267b2;
-}
-a.github {
-  color: #171515;
-}
-
 a svg {
   fill: currentColor;
 }
@@ -118,7 +105,25 @@ a svg {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   // padding-left: 12.5%; // NOTE i've disabled this padding to align it with the heading
+
+  .sticky-top-article {
+    @include media-breakpoint-up(md) {
+      width: 32%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      width: 100%;
+    }
+  }
 }
 
 // First significant deviation from CSS on tufte.css site - variable font size as browser width expands or contracts
@@ -506,8 +511,6 @@ p pre code {
   overflow-x: auto;
 }
 
-// .fullwidth, li.listing div{ max-width: 90%; }
-
 .full-width {
   .sidenote,
   .sidenote-number,
@@ -780,6 +783,37 @@ li.listing h3.new {
   body header,
   body footer {
     display: none;
+  }
+}
+
+.chart-container {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.sharebutons {
+  li {
+    margin-top: 0;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    // a.twitter {
+    //   color: #1da1f2;
+    // }
+    // a.linked {
+    //   color: #0e76a8;
+    // }
+    // a.facebook {
+    //   color: #4267b2;
+    // }
+    // a.github {
+    //   color: #171515;
+    // }
   }
 }
 
