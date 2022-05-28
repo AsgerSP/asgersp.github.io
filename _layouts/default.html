@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-  
-  <body class="group">
- 
-    {% include header.html %}
-
-
+<body class="group">
+  {% include topnavbar.html %}
+  {% include hero.html %}
+  <div class="container">
     <div class="article">
       {{ content }}
     </div>
-    {% include print-footer.html %}
-    {% include footer.html %}
-    
-  </body>
+  </div>
+  {% include print-footer.html %}
+  {% include footer.html %}
+</body>
+
 </html>

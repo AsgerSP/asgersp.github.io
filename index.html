@@ -1,104 +1,85 @@
 ---
-layout: full-width
-title: blog
-# Note that this index page uses a full-width layout!
+layout: index-layout
+title: Blog
 ---
 
 <div class="row">
-  
-  <div class="col-md-9">
-
-      <ul class="content-listing">
-    
-         
-        {% for post in site.posts limit:1 %}  
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          
-          <div class="col">
-            <!-- <div class="col-auto d-none d-lg-block"> -->
-              <div>{% include {{post.d3index}} %}</div> 
-              <!-- <div>{{ post.d3index }}</div>  -->
-    
-            </div>
-         
-          <div class="col-sm-12">
-          <!-- <div class="col p-4 d-flex flex-column position-static"> -->
-          <li class="listing">
-              
-              <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
-              <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
-              <div>{{ post.excerpt }}</div> 
-              
-              <div class="tags">
-
-                {% assign tags = post.tag | split: ', ' %}
-    
-                {% for t in tags %}
-                  <a type="button" class="{{ t }} btn btn-outline-dark">{{ t }}</a>
-                {% endfor %}
-              </div>
-              
-            </li>
-          </div>
-        
-
-          </div>
-            
-        {% endfor %}
-        <div class="row">
-        {% for post in site.posts offset:1 limit:6 %}
-      
-        <div class="col-sm-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col">
-            <!-- <div class="col-auto d-none d-lg-block"> -->
-              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-            </div>
-          <div class="col-sm-12">
-          
-          <!-- <div class="col p-4 d-flex flex-column position-static"> -->
-          <li class="listing">
-              
-              <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="contrast">{{ post.title }}</h3></a>
-              <br><span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>  <br/>
-              <div>{{ post.excerpt }}</div> 
-              <div class="tags">
-
-                {% assign tags = post.tag | split: ', ' %}
-
-                {% for t in tags %}
-                  <a type="button" class="{{ t }} btn btn-outline-dark">{{ t }}</a>
-                {% endfor %}
-              </div>
-              
-              
-            </li>
-          </div>
-         
-          </div>
-          </div>
-  
-        {% endfor %}
+  <div class="col-md-8">
+    {% for post in site.posts limit:1 %}
+    <div class="card mb-4 overflow-hidden border-0">
+      <div class="rounded">
+        {% include {{post.d3index}} %}
       </div>
-      </ul>
-    </div>
 
-   
-    <div class="col-md-3">
-      <div class="sticky-top"> 
-      <h3 class="my-3">Project Description</h3>
-      <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</a>
-      <h3 class="my-3">Project Details</h3>
-      <ul class="sharebutons">
-        {% include share.html %}
+      <div class="card-body px-0">
+        <h3 class="card-title m-0"><a href="{{ post.url | prepend: site.baseurl }}" class="x-stretched-link">{{
+            post.title }}</a></h3>
+        <p class="text-muted mt-0"><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
+        {{ post.excerpt }}
+        <!-- <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary x-stretched-link">Read more</a>
+        </p> -->
+        {% assign tags = post.tag | split: ', ' %}
+        <ul class="list-inline mb-0">
+          {% for t in tags %}
+          <li class="list-inline-item"><span class="btn btn-sm btn-outline-warning">{{ t }}</span></li>
+          {% endfor %}
         </ul>
-        <li>Lorem Ipsum</li>
-        <li>Dolor Sit Amet</li>
-        <li>Consectetur</li>
-        <li>Adipiscing Elit</li>
-    
+      </div>
     </div>
-    </div>  
-    
+    {% endfor %}
+
+    <div class="row">
+      {% for post in site.posts offset:1 limit:6 %}
+
+      <div class="col-sm-6 mb-4">
+        <div class="card h-100 border-0">
+          <div class="rounded overflow-hidden d-flex align-items-center justify-content-start bg-light" style="height: 233px;">
+            <!-- NOTE/TODO set the aspect ratio and negative margins once the 'cover photo' chart dimensions are finalized -->
+            <div style="margin: -100px -1px;">
+              {% include {{post.d3index}} %}
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column px-0">
+            <div class="flex-grow-1">
+              <h3 class="card-title m-0"><a href="{{ post.url | prepend: site.baseurl }}" class="x-stretched-link">{{
+                  post.title }}</a></h3>
+              <p class="text-muted mt-0"><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
+              {{ post.excerpt }}
+            </div>
+
+            {% assign tags = post.tag | split: ', ' %}
+            <ul class="list-inline mb-0">
+              {% for t in tags %}
+              <li class="list-inline-item"><span class="btn btn-sm btn-outline-warning">{{ t }}</span></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="sticky-top mb-4">
+      <div class="card mb-4 border-light">
+        <div class="card-body d-flex flex-column">
+          <h3 class="mt-0">Project Description</h3>
+          <p class="lh-1 text-muted"><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
+              odio, gravida pellentesque urna
+              varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu
+              convallis placerat, felis enim.</small></p>
+        </div>
+      </div>
+
+      <div class="card border-light">
+        <div class="card-body d-flex flex-column">
+          <h3 class="mt-0">Project Details</h3>
+          <p class="lh-1 text-muted"><small>Sample lorem ipsum project details text.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

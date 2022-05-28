@@ -3,6 +3,8 @@ layout: post
 title:  "Tufte-style Jekyll blog"
 date:   2015-02-19 21:46:04
 tag: jekyll, css
+coverphoto: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?w=640"
+d3index: "D3/Test4.html"
 ---
 {% newthought 'The Tufte Jekyll theme' %} is an attempt to create a website design with the look and feel of Edward Tufte's books and handouts. <!--more--> Tufte’s style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography. The idea for this project is essentially cribbed wholesale from Tufte and R Markdown's Tufte Handout format{% sidenote 'One' 'See [tufte-latex.github.io/tufte-latex/](https://tufte-latex.github.io/tufte-latex/) and [rmarkdown.rstudio.com/tufte_handout_format](http://rmarkdown.rstudio.com/tufte_handout_format.html)' %}. This page is an adaptation of the [Tufte Handout PDF](http://rmarkdown.rstudio.com/examples/tufte-handout.pdf).
 

@@ -1,18 +1,32 @@
-      <li>
-        <p class="sharetitle"> Share this: </p>
-      </li>
-      <li>
-        <a class="twitter" href="https://twitter.com/intent/tweet?via=USERNAME&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}" target="_blank">
-          {% include social-icons/twitter.svg %}
-        </a>
-        <a class="linked" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank">
-          {% include social-icons/linkedin.svg %}
-        </a>  
-        <a class="facebook" href="https://www.facebook.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank">
-          {% include social-icons/facebook.svg %}
-        </a>
-        <a class="github" href="https://www.github.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}" target="_blank">
-          {% include social-icons/github.svg %}
-        </a>
-    </li>
-  
+<p class="text-muted mb-0"><small>Share this on:</small></p>
+
+<ul class="p-0 sharebutons">
+  <li class="list-inline-item">
+    <a class="twitter"
+      href="https://twitter.com/intent/tweet?via=USERNAME&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&text={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+      {% include social-icons/twitter.svg %}
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="linked"
+      href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+      {% include social-icons/linkedin.svg %}
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="facebook"
+      href="https://www.facebook.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+      {% include social-icons/facebook.svg %}
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="github"
+      href="https://www.github.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | uri_escape}}&title={{ page.title | default:"" | uri_escape}}"
+      target="_blank">
+      {% include social-icons/github.svg %}
+    </a>
+  </li>
+</ul>
