@@ -14,11 +14,18 @@ $contrast-color: #a00000;
 $border-color: #333333;
 $link-style: color; // choices are 'color' or 'underline'. Default is color using $contrast-color set above
 
-$body-top-padding: 122px; // NOTE current top navbar height
-$body-top-padding-md: 90px; // NOTE current top navbar height
-$body-top-padding-lg: 111px; // NOTE current top navbar height
+$body-top-padding: 105px; // NOTE current top navbar height
+$body-top-padding-md: 75px; // NOTE current top navbar height
+$body-top-padding-lg: 85px; // NOTE current top navbar height
 
 // NOTE: in order to override some Bootstrap variables, copy-paste a variable from _sass/bootstrap/_variables.scss file and update it's value, e.g. $primary: #ff88aa;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
 $primary: #1f77b4;
 $warning: #ff7f0e;
 $contrast-color: $warning;

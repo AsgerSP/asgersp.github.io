@@ -75,6 +75,28 @@ footer {
     margin-top: 15rem;
   }
 }
+
+.sticky-top-sidebar {
+  position: sticky;
+  top: $body-top-padding;
+  z-index: $zindex-sticky;
+
+  @include media-breakpoint-up(md) {
+    top: $body-top-padding-md;
+
+    .shrank & {
+      top: $body-top-padding-md - 15;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    top: $body-top-padding-lg;
+
+    .shrank & {
+      top: $body-top-padding-lg - 15;
+    }
+  }
+}
 //* END OF ADD-INS */
 
 a svg {
@@ -603,6 +625,19 @@ label.margin-toggle:not(.sidenote-number) {
   font-size: 80%;
 }
 //Nav and Footer styling area
+.topnavbar {
+  transition: all 0.3s ease;
+
+  .shrank & {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.05);
+
+    .active {
+      border-radius: 0;
+    }
+  }
+}
 
 header > nav.group,
 body footer {
