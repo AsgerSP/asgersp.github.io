@@ -4,7 +4,7 @@ title:  "Edge Cases"
 date:   2015-02-17 11:04:01
 tag: post
 coverphoto: "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?w=640"
-d3index: "D3/Test.html"
+d3chartPlaceholder: "observablehq-chart-468b6385"
 ---
 Some edge cases and cautionary examples on using Markdown for writing content using this theme. In particular, list syntax can really knot things up.
 <!--more-->

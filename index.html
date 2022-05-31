@@ -8,7 +8,17 @@ title: Blog
     {% for post in site.posts limit:1 %}
     <div class="card mb-4 overflow-hidden border-0">
       <div class="rounded">
-        {% include {{post.d3index}} %}
+        {% if post.d3chartPlaceholder %}
+        <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"></div>
+        {% elsif post.d3canvasPlaceholder %}
+        <div class="chart-container overflow-hidden rounded mb-4">
+          <div class="d3-canvas-placeholder" id=" {{ post.d3canvasPlaceholder }}"></div>
+        </div>
+        {% else %}
+        <div class="chart-container overflow-hidden rounded mb-4">
+          <img src="https://placekitten.com/640/360" class="img-fluid">
+        </div>
+        {% endif %}
       </div>
 
       <div class="card-body px-0">
@@ -33,10 +43,20 @@ title: Blog
 
       <div class="col-sm-6 mb-4">
         <div class="card h-100 border-0">
-          <div class="rounded overflow-hidden d-flex align-items-center justify-content-start bg-light" style="height: 233px;">
-            <!-- NOTE/TODO set the aspect ratio and negative margins once the 'cover photo' chart dimensions are finalized -->
-            <div style="margin: -100px -1px;">
-              {% include {{post.d3index}} %}
+          <div class="rounded overflow-hidden d-flex align-items-center justify-content-start bg-light"
+            style="height: 233px;">
+            <div class="rounded">
+              {% if post.d3chartPlaceholder %}
+              <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"></div>
+              {% elsif post.d3canvasPlaceholder %}
+              <div class="chart-container overflow-hidden rounded mb-4">
+                <div class="d3-canvas-placeholder" id=" {{ post.d3canvasPlaceholder }}"></div>
+              </div>
+              {% else %}
+              <div class="chart-container overflow-hidden rounded mb-4">
+                <img src="https://placekitten.com/640/360" class="img-fluid">
+              </div>
+              {% endif %}
             </div>
           </div>
           <div class="card-body d-flex flex-column px-0">
