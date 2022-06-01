@@ -7,19 +7,16 @@ title: Blog
   <div class="col-md-8">
     {% for post in site.posts limit:1 %}
     <div class="card mb-4 overflow-hidden border-0">
-      <div class="rounded">
-        {% if post.d3chartPlaceholder %}
-        <div class="chart-container overflow-hidden rounded mb-4">
-          <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"
-            data-type="{{ post.d3chartType }}">
-          </div>
+      {% if post.d3chartPlaceholder %}
+      <div class="chart-container overflow-hidden rounded">
+        <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}" data-type="{{ post.d3chartType }}">
         </div>
-        {% else %}
-        <div class="chart-container overflow-hidden rounded mb-4">
-          <img src="https://placekitten.com/640/360" class="img-fluid">
-        </div>
-        {% endif %}
       </div>
+      {% else %}
+      <div class="chart-container overflow-hidden rounded">
+        <img src="https://placekitten.com/640/360" class="img-fluid">
+      </div>
+      {% endif %}
 
       <div class="card-body px-0">
         <h3 class="card-title m-0"><a href="{{ post.url | prepend: site.baseurl }}" class="x-stretched-link">{{
@@ -43,21 +40,17 @@ title: Blog
 
       <div class="col-sm-6 mb-4">
         <div class="card h-100 border-0">
-          <div class="rounded overflow-hidden d-flex align-items-center justify-content-start bg-light"
-            style="height: 233px;">
-            <div class="rounded">
-              {% if post.d3chartPlaceholder %}
-              <div class="chart-container overflow-hidden rounded mb-4">
-                <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"
-                  data-type="{{ post.d3chartType }}">
-                </div>
+          <div class="overflow-hidden rounded d-flex align-items-center justify-content-start bg-light" style="height: 233px;">
+            {% if post.d3chartPlaceholder %}
+            <div class="chart-container overflow-hidden rounded">
+              <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}" data-type="{{ post.d3chartType }}">
               </div>
-              {% else %}
-              <div class="chart-container overflow-hidden rounded mb-4">
-                <img src="https://placekitten.com/640/360" class="img-fluid">
-              </div>
-              {% endif %}
             </div>
+            {% else %}
+            <div class="chart-container overflow-hidden rounded h-100">
+              <img src="https://placekitten.com/640/360" class="img-fluid h-100">
+            </div>
+            {% endif %}
           </div>
           <div class="card-body d-flex flex-column px-0">
             <div class="flex-grow-1">

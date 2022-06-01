@@ -17,6 +17,8 @@ $link-style: color; // choices are 'color' or 'underline'. Default is color usin
 $body-top-padding: 105px; // NOTE current top navbar height
 $body-top-padding-md: 75px; // NOTE current top navbar height
 $body-top-padding-lg: 85px; // NOTE current top navbar height
+$article-width: 66%;
+$article-width-full: 90%;
 
 // NOTE: in order to override some Bootstrap variables, copy-paste a variable from _sass/bootstrap/_variables.scss file and update it's value, e.g. $primary: #ff88aa;
 $container-max-widths: (
