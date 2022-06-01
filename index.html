@@ -9,10 +9,10 @@ title: Blog
     <div class="card mb-4 overflow-hidden border-0">
       <div class="rounded">
         {% if post.d3chartPlaceholder %}
-        <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"></div>
-        {% elsif post.d3canvasPlaceholder %}
         <div class="chart-container overflow-hidden rounded mb-4">
-          <div class="d3-canvas-placeholder" id=" {{ post.d3canvasPlaceholder }}"></div>
+          <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"
+            data-type="{{ post.d3chartType }}">
+          </div>
         </div>
         {% else %}
         <div class="chart-container overflow-hidden rounded mb-4">
@@ -47,10 +47,10 @@ title: Blog
             style="height: 233px;">
             <div class="rounded">
               {% if post.d3chartPlaceholder %}
-              <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"></div>
-              {% elsif post.d3canvasPlaceholder %}
               <div class="chart-container overflow-hidden rounded mb-4">
-                <div class="d3-canvas-placeholder" id=" {{ post.d3canvasPlaceholder }}"></div>
+                <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}"
+                  data-type="{{ post.d3chartType }}">
+                </div>
               </div>
               {% else %}
               <div class="chart-container overflow-hidden rounded mb-4">
