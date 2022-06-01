@@ -7,10 +7,10 @@
     <div class="container">
         <div class="article">
             {% if page.d3chartPlaceholder %}
-            <div class="d3-chart-placeholder" id=" {{ page.d3chartPlaceholder }}"></div>
-            {% elsif page.d3canvasPlaceholder %}
-            <div class="chart-container overflow-hidden mb-4">
-                <div class="d3-canvas-placeholder" id=" {{ page.d3canvasPlaceholder }}"></div>
+            <div class="chart-container overflow-hidden rounded mb-4">
+                <div class="d3-chart-placeholder" id=" {{ page.d3chartPlaceholder }}"
+                    data-type="{{ page.d3chartType }}">
+                </div>
             </div>
             {% else %}
             <div class="chart-container overflow-hidden rounded mb-4">
@@ -18,7 +18,6 @@
             </div>
             {% endif %}
             <h1>{{ page.title}}</h1>
-            <!-- <p><img src="{{ page.coverphoto }}" class="img-fluid rounded" alt="TODO"></p> -->
             <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
             {{ content }}
 
