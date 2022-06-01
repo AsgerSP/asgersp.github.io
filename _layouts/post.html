@@ -7,7 +7,7 @@
     <div class="container">
         <div class="article">
             {% if page.d3chartPlaceholder %}
-            <div class="chart-container overflow-hidden rounded mb-4">
+            <div class="chart-container overflow-hidden rounded mb-4" style="max-height: 66vh;">
                 <div class="d3-chart-placeholder" id=" {{ page.d3chartPlaceholder }}"
                     data-type="{{ page.d3chartType }}">
                 </div>

@@ -5,6 +5,8 @@ date:   2015-02-08 13:06:04
 coverphoto: "https://images.pexels.com/photos/3781338/pexels-photo-3781338.jpeg?w=640"
 tag: jekyll, update
 d3index: "D3/Test3.html"
+d3chartPlaceholder: "observablehq-sticky_sierpinski-e96da203"
+d3chartType: "sticky"
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

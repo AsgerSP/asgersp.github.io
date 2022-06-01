@@ -38,7 +38,7 @@ canvas {
 
 .full-width {
   p {
-    width: 90%;
+    width: $article-width-full;
   }
 }
 
@@ -56,10 +56,10 @@ canvas {
     .table-wrapper,
     .mathblock,
     .chart-container {
-      width: 66%;
+      width: $article-width;
 
       @media (max-width: 760px) {
-        width: 90%;
+        width: $article-width-full;
       }
     }
 
@@ -406,7 +406,7 @@ ol {
 
 figure,
 figure img.maincolumn {
-  max-width: 66%;
+  max-width: $article-width;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
   margin-bottom: 3em;
@@ -422,7 +422,7 @@ figcaption {
   line-height: 1.6;
   vertical-align: baseline;
   position: relative;
-  max-width: 40%;
+  max-width: $article-width - 20%;
 }
 
 figure.fullwidth figcaption {
@@ -440,7 +440,7 @@ img {
   float: right;
   clear: right;
   margin-right: -38%;
-  width: 33%;
+  width: $article-width * .5;
   margin-top: 0;
   margin-bottom: 1.96rem;
   font-size: 1rem;
@@ -496,16 +496,16 @@ div.table-wrapper {
   p,
   footer,
   div.mathblock {
-    width: 90%;
+    width: $article-width-full;
   }
   pre code {
-    width: 87.5%;
+    width: $article-width-full - 2.5%;
   }
   ul {
-    width: 85%;
+    width: $article-width-full - 5%;
   }
   figure {
-    max-width: 90%;
+    max-width: $article-width-full;
   }
   figcaption,
   figure.fullwidth figcaption {
@@ -514,7 +514,7 @@ div.table-wrapper {
   }
   blockquote p,
   blockquote footer {
-    width: 80%;
+    width: $article-width-full - 10%;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -528,7 +528,7 @@ div.table-wrapper {
 pre,
 pre code,
 p pre code {
-  width: 52.5%;
+  width: $article-width - 13.5%;
   padding-left: 2.5%;
   overflow-x: auto;
 }
@@ -586,7 +586,7 @@ label.margin-toggle:not(.sidenote-number) {
   pre code,
   p code,
   p pre code {
-    width: 90%;
+    width: $article-width-full;
     padding: 0;
   }
   .table-caption {
@@ -825,6 +825,28 @@ li.listing h3.new {
   img {
     width: 100%;
     object-fit: cover;
+  }
+}
+
+.section-hero {
+  .d3-chart-placeholder {
+    svg {
+      height: 65vw !important;
+
+      @include media-breakpoint-up(md) {
+        height: auto !important;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-right: -16%;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        margin-right: auto;
+        margin-left: -25%;
+        max-width: 165% !important;
+      }
+    }
   }
 }
 
