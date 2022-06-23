@@ -261,7 +261,7 @@ ul {
 p,
 li {
   line-height: 2rem;
-  margin-top: 1.4rem;
+  //margin-top: 1.4rem; //removed because it didnt work for the side bar
   // padding-right: 2rem; //removed because,  it doesn't fit
   vertical-align: baseline;
 }
@@ -872,6 +872,10 @@ li.listing h3.new {
     //   color: #171515;
     // }
   }
+}
+
+.position-fixed {
+  z-index: 10000;
 }
 
 /* --- Icomoon icon fonts CSS --*/
