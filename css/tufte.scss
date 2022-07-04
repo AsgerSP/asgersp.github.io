@@ -16,7 +16,7 @@ nav_exclude: true
 
 @import "../_sass/fonts";
 @import "../_sass/settings";
-@import "../_sass/newsletter";
+// @import "../_sass/newsletter"; // NOTE: this is required for 'form builder mode' only
 @import "../_sass/bootstrap/bootstrap";
 @import "../_sass/syntax-highlighting";
 
