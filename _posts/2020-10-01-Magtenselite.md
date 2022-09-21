@@ -14,8 +14,8 @@ Et udkast til visualisering af magtens elite.
 Hvad hvis vi skriver lidt mere her og så kommer der noget her
 {% sidenote 'One' 'See this is good' %}
 
- <p>{% include D3/visual.html %}</p> 
- 
+
+ <p>{% include D3/visual.html %}</p>  
 
 Og bagefter skal du klikke her
 
