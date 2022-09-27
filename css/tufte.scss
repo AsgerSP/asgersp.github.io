@@ -120,7 +120,18 @@ a svg {
 }
 
 // THIS IS PERSONAL FOR HEADER END //
+h1 {
+  color: $primary;
+  text-decoration: underline;
+}
+h2,
+h3 {
+  color: $primary;
+}
 
+.nav-link {
+  color: #000;
+}
 //PERSONAL ARTICLE /
 
 .article {
@@ -212,8 +223,8 @@ p > a {
 }
 
 a.active {
-  color: $contrast-color;
-  text-decoration: none;
+  color: $primary;
+  text-decoration: underline;
 }
 
 a.passive {
@@ -439,15 +450,16 @@ img {
 .marginnote {
   float: right;
   clear: right;
-  margin-right: -38%;
-  width: $article-width * .5;
+  margin-right: -45%; //-38% originally but think -40 looks better
+  width: $article-width * .6; //.5 originally but think .6 is better
   margin-top: 0;
   margin-bottom: 1.96rem;
   font-size: 1rem;
-  line-height: 1.96; //changed to bring line heights into rational pattern
+  line-height: 1.5; //changed to bring line heights into rational pattern // changed from 1.96 to 1.5
   vertical-align: baseline;
   position: relative;
   font-family: Crimson, Oxygen;
+  top: -0.5rem; //changed made by asped to match change in label.margin-toggle:not(.sidenote-number)
 } //own changes made to sidenotes
 
 li,
@@ -536,7 +548,8 @@ p pre code {
 .full-width {
   .sidenote,
   .sidenote-number,
-  .marginnote {
+  .marginnote 
+  {
     display: none;
   }
 }
@@ -555,9 +568,12 @@ label.sidenote-number {
   display: inline;
 }
 
-label.margin-toggle:not(.sidenote-number) {
-  display: none;
+label.margin-toggle:not(.sidenote-number) { //previously this was display: none
+  position: relative;
+  top: -0.5rem;
+  color: $contrast-color;
 }
+
 
 @media (max-width: 760px) {
   label.margin-toggle:not(.sidenote-number) {
@@ -565,7 +581,8 @@ label.margin-toggle:not(.sidenote-number) {
     color: $contrast-color;
   }
   .sidenote,
-  .marginnote {
+  .marginnote, 
+  {
     display: none;
   }
   .margin-toggle:checked + .sidenote,

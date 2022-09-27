@@ -1,7 +1,7 @@
 // NOTE: Datadreven supports 3 kinds of D3 charts: chart, canvas & disjoint. This file should be updated for more types
 import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@asgersp/d3-force-directed-graph-with-input.js?v=3";
-import defineDisjoint from "https://api.observablehq.com/@asgersp/force-directed-graph-disjoint@267.js?v=3";
+import defineDisjoint from "https://api.observablehq.com/@asgersp/force-directed-graph-disjoint.js?v=3";
 import defineDisjointSmall from "https://api.observablehq.com/d/85654f9589f63b8f.js?v=3";
 import defineCanvas from "https://api.observablehq.com/@asgersp/voroblobinoids.js?v=3";
 import defineSpiral from "https://api.observablehq.com/@mcmcclur/self-similar-spirals.js?v=3";
@@ -38,9 +38,9 @@ d3ChartPlaceholders.forEach(function (d3ChartPlaceholder) {
         new Runtime().module(defineSticky, name => {
             if (name === "sticky_sierpinski") return new Inspector(d3ChartPlaceholder);
         });
-    } else if (d3Type == "bubblechart") {
+    } else if (d3Type == "Bubblechart") {
         new Runtime().module(defineBubblechart, name => {
-        if (name === "chart") return new Inspector(d3ChartPlaceholder);
+        if (name === "BubbleChartName") return new Inspector(d3ChartPlaceholder);
         });
     }
     

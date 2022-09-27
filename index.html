@@ -6,7 +6,7 @@ title: Hjem
 <div class="row">
   <div class="col-md-8">
     {% for post in site.posts limit:1 %}
-    <div class="card mb-4 overflow-hidden border-0">
+    <div class="card mb-4 overflow-hidden border-0" style="height: 466px;">
       {% if post.d3chartPlaceholder %}
       <div class="chart-container overflow-hidden rounded">
         <div class="d3-chart-placeholder" id=" {{ post.d3chartPlaceholder }}" data-type="{{ post.d3chartType }}">
@@ -22,7 +22,7 @@ title: Hjem
         <h3 class="card-title m-0"><a href="{{ post.url | prepend: site.baseurl }}" class="x-stretched-link">{{
             post.title }}</a></h3>
         <p class="text-muted mt-0"><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
-        {{ post.excerpt }}
+        <p>{{ post.intro }}</p>
         <!-- <p><a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-primary x-stretched-link">Read more</a>
         </p> -->
         {% assign tags = post.tag | split: ', ' %}
@@ -67,7 +67,7 @@ title: Hjem
               {% endfor %}
             </ul>
           </div>
-        </div>
+          </div>
       </div>
 
       {% endfor %}
@@ -76,9 +76,9 @@ title: Hjem
 
   <div class="col-md-4">
     <div class="sticky-top-sidebar mb-4">
-      <div class="card mb-4 border-light">
+      <div class="card mb-4 border-0 bg-light">
         <div class="card-body d-flex flex-column">
-          <h3 class="mt-0">Om os</h3>
+          <p class="fw-bold lh-1 my-3 text-nowrap mt-0">Om os</p>
           <p class="fs-5 lh-1 text-muted">
             <small>Imargin er en blog der med simple visualiseringer gør dig klogere på din digitale hverdag og dens den påvirkning på dig. 
             Vi har ingen reklamer og lever udelukkende af den internetkærlighed som vores følgere giver os. Bliv en del af fællesskabet ved at tilmelde dig vores nyhedsbrev.
