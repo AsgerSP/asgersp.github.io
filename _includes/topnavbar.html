@@ -5,12 +5,12 @@
 			<a href="{{site.baseurl}}/"
 				class="d-flex align-items-center me-md-auto text-dark text-decoration-none me-5">
 				<span class="fs-2">Imargin</span>
-				<img class="m-1" src="{{site.baseurl}}/assets/img/SmallIcon_QualiBright.svg" width="40"height="40">
+				<img class="m-1" src="{{site.baseurl}}/assets/img/SmallIcon_QualiBright.svg" width="40" height="40">
 			</a>
 
 			<!-- <ul class="nav nav-pills justify-content-center justify-content-lg-start"> -->
 			<ul class="nav justify-content-center justify-content-lg-start">
-			{% for node in site.pages %}
+				{% for node in site.pages %}
 				{% unless node.nav_exclude %}
 				{% if page.url == node.url %}
 				<li class="nav-item mt-0"><a href="{{node.url | prepend: site.baseurl}}" class="nav-link active"
@@ -27,28 +27,7 @@
 	</div>
 </div>
 <div class="position-fixed bottom-0 end-0">
-	<img class="m-3" src="{{site.baseurl}}/assets/img/SmallIcon_QualiBright.svg" alt="Datadreven Blog" width="50" height="50">
-<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body">
-		  ...
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Save changes</button>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-	</div>
-
-
-</div>	
+	<img class="m-3" src="{{site.baseurl}}/assets/img/SmallIcon_QualiBright.svg" alt="Datadreven Blog" width="50"
+		height="50" data-bs-toggle="modal" data-bs-target="#exampleModal">
 </div>
+{% include modal.html %}
