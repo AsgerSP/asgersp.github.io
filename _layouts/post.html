@@ -28,9 +28,28 @@
                         <div class="flex-grow-1">
                             <h3 class="mt-0">Om denne fortælling</h3>
                             <p class="lh-1 text-muted"><small>{{page.beskrivelse}}</small></p>
-                            <div class="d-grid">
-                                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
+                            
+                            <form
+                            action="https://login.sendpulse.com/forms/simple/u/eyJ1c2VyX2lkIjo4MDc1NzgyLCJhZGRyZXNzX2Jvb2tfaWQiOjM3MjkyMiwibGFuZyI6ImVuIn0="
+                            method="post">
+                            <!-- <label>Navn</label>
+                            <input type="text" name="name"> -->
+                            <div class="row">
+                              <div class="col-md-8">
+                                <label class="visually-hidden">Email</label>
+                                <input type="email" required name="email" placeholder="Tilmeld nyhedsbrev" class="form-control mb-3 mb-md-0">
+                              </div>
+                              <div class="col-md-4 d-grid d-md-flex mb-5 mb-md-0">
+                                <input type="hidden" name="sender" value="hej@imargin.dk">
+                                <button class="btn btn-primary">Tilmeld</button>
+                              </div>
                             </div>
+                          </form>
+                        </br>
+                            
+                            <!-- <div class="d-grid">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
+                            </div> -->
                             {% include share.html %}
                         </div>
 

@@ -1,0 +1,44 @@
+I"7<p>Om hvordan Batman er den ultimate Stoiker og hvad det betyder for måden hvorpå popkulturen anskuer selvopofrelse på
+<!--more--></p>
+
+<p>Hvad hvis vi skriver lidt mere her og så kommer der noget her
+<label for="One" class="margin-toggle sidenote-number"></label><input type="checkbox" id="One" class="margin-toggle" /><span class="sidenote">See this is good </span></p>
+
+<div><div id="visual"></div>
+
+<script type="module">
+
+  // NOTEBOOK CONFIGURATION
+  import notebook from "https://api.observablehq.com/d/951e5ee7317bb029.js";
+
+  const target = document.querySelector("#visual");
+  const renders = {
+    "chart": "div",
+  };
+
+
+  // BOILERPLATE
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  for (let i in renders) {
+    let s = renders[i], a = s.match(/^\w+/);
+    if (a) {
+      renders[i] = document.createElement(a[0]);
+      target.appendChild(renders[i]);
+      if (a = s.match(/\.(\w+)$/))
+        renders[i].className = a[1]; 
+    }
+    else
+      renders[i] = document.querySelector(renders[i]);
+  }
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name]) {
+      return new Inspector(renders[variable.name]);
+    } else {
+      // return true; // uncomment to run hidden cells
+    }
+  });
+</script></div>
+
+<p>Og bagefter skal du klikke her</p>
+
+:ET
