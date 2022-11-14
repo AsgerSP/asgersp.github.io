@@ -279,7 +279,7 @@ li {
 }
 
 blockquote p {
-  font-size: 1.1rem;
+  font-size: 1.3rem; //changed from 1.1rem
   line-height: 1.78181818;
   margin-top: 1.78181818rem;
   margin-bottom: 1.78181818rem;
@@ -289,7 +289,7 @@ blockquote p {
 }
 
 blockquote footer {
-  width: 45%;
+  //width: 45%;
   text-align: right;
 }
 
@@ -716,6 +716,27 @@ ul.footer-links li {
 }
 
 // End of Nav and Footer styling area
+
+/* Chapter Epigraphs */
+div.epigraph { margin: 3.5636rem 0; }
+
+div.epigraph > blockquote { margin-top: 3rem;
+                            margin-bottom: 3rem;
+                             }
+
+div.epigraph > blockquote, div.epigraph > blockquote > p { font-style: italic; }
+
+div.epigraph > blockquote > footer {  font-style: normal;
+                                      //width: 45%;
+                                      padding-left: 2.5%;
+                                      padding-right: 2.5%;
+                                      padding-top: 0;
+                                      margin-top: 0.4455rem;
+                                      margin-bottom: 3.1182rem }
+
+div.epigraph > blockquote > footer > cite { font-style: italic; }
+/* end chapter epigraphs styles */
+
 
 // Full width page styling stuff
 

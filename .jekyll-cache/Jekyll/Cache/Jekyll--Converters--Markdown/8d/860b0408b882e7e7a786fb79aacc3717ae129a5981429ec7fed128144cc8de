@@ -1,0 +1,110 @@
+I"�4<p><span class="newthought">Min far skulle rejse halvvejs rundt om jorden,</span> for at få sin første emailadresse. Det var 1994 og vi var rejst med ham til New Zealand, hvor han skulle undervise. Det var lidt før internettet gjorde sit indtog hos den brede offentlighed. Nu er det svært at forestille sig en hverdag uden internettet, men i sin spæde start var det forbeholdt forsknings og militæret. Det på det tidspunkt slet ikke i kortene at internettet ville blive så stor en succes. Det var en universalt kendt at at internettet ikke var noget som <em>normale</em> mennesker ville komme til at bruge {Andreesen sam harris. Speaking about the time between 1992-1994: “It wwas so universally known that the internet was not something that normal people were going to use}. Folk som Bill Gates var stadig meget skeptiske og han på daværende tidspunkt ikke se den store kommercielle potentiale i teknologien. {“I see little commercial potential for the internet for the next 10 years” https://www.businessinsider.com/the-dumbest-things-bill-gates-ever-said-2016-4 sagde han i 1994 i 1995 udsender han i 1996 “the internet tidalwave memo”}. 
+Der var der dog andre der fra starten så dets kæmpe potentiale og som havde en stor andel i hvordan det hele begyndt. Marc Andreesen var en af disse. Han var med til at udvikle Mosaic {den første webbrowser https://en.wikipedia.org/wiki/Marc_Andreessen} og den første store kommercielle browser Netscape Navigator der var den mest brugte browser i da i 1990’erne {source}. Marc Andreesen og hans folk bøvlede dog med en stor udfordring som de aldrig fik løst. De ønskede at lave en betalingsløsning i browseren. Et plug-in til bank industrien således at man kunne tjene penge på at lave indhold på internettet. Det lykkedes aldrig {MA 21 min: microsoft og aol prøvede også uden held } og den eneste anden løsning var at reklamer blev måden hvorpå man kunne ‘betale’ for brug af internettet.</p>
+
+<div class="epigraph"><blockquote><p>"If you cant charge people for things you gotta run adds. 
+And that is what happened"</p><footer>Marc Andreesen, <cite> "What went wrong? Making Sense Podcast 22 min" </cite></footer></blockquote></div>
+
+<p>Marc Andreesen - Sam Harris Hvordan man skulle tjene penge
+Ikke muligt med betalingsløsning og derfor blev det reklamer</p>
+
+<p>For at reklamer kan være effektive, skal man have data.</p>
+
+<p>Data blev det nye olie</p>
+
+<p>Og det er der vi er i dag. Dem som har mange brugere, får meget data og kan dermed sælge deres data videre og tjene penge på reklamer. 
+Det er essentielt forretningsmodellen bag alle de store some (facebook, instagram..)</p>
+
+<p>Det er også derfor startups ikke behøver tjene penge (og også store orgs som instagram heller ikke behøver - de har endnu ikke haft et overskud). (Det skyldes at de har så meget potentiel værdi i deres data- goodwill)
+DHH - facebook kan ikke tjene penge</p>
+
+<p>Udover de konsekvenserne er at der er nogle få store spillere der styrer det hele 
+monopolhandlinger { sidenote },
+ ytringsfrihed { sidenote } 
+ og deling af personfølsomme oplysninger { sidenote }</p>
+
+<p>Så er forretningsmodellen baseret på at du skal være på sitet så meget som muligt. Gøre dig afhængig. Mest kendt er nok Instagram rapport om at dette er meget kendt {links til rapporter om }</p>
+
+<p>Denne centralisering er nu blevet grundsstrukturen indgangene til internettet. De styrer hvordan vi bruger internettet.</p>
+
+<p>Så spørgsmålet dette nogensinde vil ændrer sig?</p>
+
+<p>Svaret mener jeg er ja, og jeg mener faktisk allerede det er på vej. Der er en revolution i gang hvis mål er at skabe et decentralt netværk til at tage over for de nyeste.</p>
+
+<p>Før vi når frem til det skal vi dog kigge lidt nærmere på hvordan vi kom her til.</p>
+
+<p>Men internettet har siden sin undfangelse gennemgået en række ændringer og er ikke det samme som ved dets oprindelse. I sin nuværende form er internettet drevet af brugerdata som er betalingsmidlet der bruges for de ellers frie services. Jo flere brugere, des mere data som kan bruges til at sælge videre til tredjeparter til målrettede reklamer. Det har samtidig skabt få SoMe platforme som Twitter, YouTube, Facebook, Instagram. De fleste ejet af få de fem største techvirksomheder i verdenen - de såkaldte MAMAA <label for="mn-id-1" class="margin-toggle"> ⊕</label><input type="checkbox" id="mn-id-1" class="margin-toggle" /><span class="marginnote">Meta (tidligere Facebook), Amazon, Microsoft, Amazon, Alphabet (tidligere Google). Før navneændringerne var disse også kaldet FAANG, hvor Netflix figurerede i stedet for Microsoft. <strong><a href="https://mountaintimes.info/what-is-mamaa/">What is MAMAA</a></strong> </span>. Dette har skabt yderligere problemer da det har skabt en centralisering af magt hos få privatejede virksomheder. Diskussioner om monopolhandlinger { sidenote }, ytringsfrihed { sidenote } og deling af personfølsomme oplysninger { sidenote } har i særdeleshed sat fokus på problemstillingerne ved den struktur som internettet er opbygget på. Mindre forskel</p>
+
+<p>Denne fortælling vil kigge på hvordan internettet er blevet som det er. .. og om hvorvidt en ny version af internettet kan løse de problemer som vi står overfor.</p>
+
+<p>For at forstå hvordan det hele startede, skal vi tilbage til 1969 hvor to bogstaver spillede en central rolle i starten på internettet.</p>
+
+<h2 id="to-bogstaver-der-startede-det-hele">To bogstaver der startede det hele</h2>
+
+<p>I starten af Werner Herzog’s dokumentar <strong><a href="https://www.imdb.com/title/tt5275828/">Lo and behold</a></strong> <label for="sn-id-3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-id-3" class="margin-toggle" /><span class="sidenote">Werner Herzog, <em>Lo and Behold: Reveries of the Connected World</em>, 2016. </span> genskaber han, hvordan den første besked blev sendt mellem to computere. Professor <strong><a href="https://da.wikipedia.org/wiki/Leonard_Kleinrock">Leonard Kleinrock</a></strong> husker tilbage til da han første gang prøvede at logge på computeren på Stanford University som de havde tilknyttet en computer på hans eget fakultet på UCLA. For at logge ind skulle man skrive sende beskeden L-O-G. De nåede bare ikke så langt, for den tilknyttede computer <em>crashede</em> efter at have modtaget de første to bogstaver: L-O. “<em>Lo</em> and Behold” som i “<em>Se</em> og beskue” - meget poetisk og profetisk. Sådan blev den første besked sendt mellem to computere og lagde grundstenen for internettet <label for="mn-id-4" class="margin-toggle"> ⊕</label><input type="checkbox" id="mn-id-4" class="margin-toggle" /><span class="marginnote">Første gang <em>internettet</em> bruges som begreb var i 1974, som en forkortelse for <strong><a href="https://datatracker.ietf.org/doc/html/rfc675">internetwork</a></strong> </span></p>
+
+<h2 id="internettes-første-generation-web10">Internettes første generation Web1.0</h2>
+<p>I starten var det hovedsagligt offentlige institutioner og universiteter som brugte sig af internettet. Der var derfor før 1990erne var der ingen rigtig kommerciel brug af internettet for virksomheder.</p>
+
+<p>I starten af 1990s begynder internetbrugere at tage fart <label for="sn-id-4" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-id-4" class="margin-toggle" /><span class="sidenote">Our World in Data, <em>Share of the population using the internet</em>, 1990-2020. (https://ourworldindata.org/internet) </span>.</p>
+
+<p>
+<iframe src="https://ourworldindata.org/grapher/share-of-individuals-using-the-internet?country=South+Asia~North+America~Sub-Saharan+Africa~East+Asia+and+Pacific~Middle+East+and+North+Africa~Europe+and+Central+Asia~Latin+America+and+Caribbean~DNK" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</p>
+
+<p>Omkring 2005 ændrede internettet sig til Web02<label for="mn-id-2" class="margin-toggle"> ⊕</label><input type="checkbox" id="mn-id-2" class="margin-toggle" /><span class="marginnote">Udtrykket blev opfundet af <em>Darcy DiNucci</em> allerede i 1999, som beskrev hvad der var på vej <strong><a href="http://darcyd.com/fragmented_future.pdf">Fragmented Future</a></strong> </span>.</p>
+
+<p>Facebook, YouTube, Google gjorde sit indtog og internettet blev det format som vi kender nu <label for="mn-id-3" class="margin-toggle"> ⊕</label><input type="checkbox" id="mn-id-3" class="margin-toggle" /><span class="marginnote">Udtrykket blev gjort popoulært af <em>Tim O´Reily</em> i 2004, som med artiklen <strong><a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html">What Is Web 2.0</a></strong> sammenlignede de tidligere <em>spillere</em> i Web01 med de nye </span></p>
+
+<p>Siden da er det kun gået en vej - alt skal nu være digitalt. Og ikke nok med det. Det skal også være smart og lækkert. De enheder vi bruger til at tilgå internettet er designobjekter i sig selv og dets brugergrænseflader bliver simplificeret i en sådan grad at vi forventer at det kun kræver et klik for at få en pizza leveret til vores hoveddør. Vi er blevet forvænt.</p>
+
+<p>Men vi skal passe på at vi ikke stirrer os blinde på de blanke overflader så vi overgiver al initiativ og visdom til de få og glemmer at internettet skal være et demokratisk sted for os alle.</p>
+
+<p>For ikke nok med at vi betaler med vores personlige data, vi prisen i fremtiden kan blive endnu højere hvis vi fortsat <em>fremmedgøre</em> os over for hvordan det teknologiske fundament der driver vores verden fungerer.</p>
+
+<p>For at forstå hvor internettet er på vej hen har vi brug for at vide hvor det kommer fra og hvordan det er struktureret.</p>
+
+<p>Det er derfor vigtigt at vi undersøger hvordan internettet fungerer og presser os selv til at lærer mere om hvordan den underliggende teknologi fungerer.</p>
+
+<p>I denne fortælling undersøger jeg dette ved at kigge på:</p>
+
+<ul>
+  <li>Hvordan startede internettet og hvad er dens fundamentalle byggeblokke?</li>
+  <li>Hvad er problematikkerne ved hvordan internettet er struktureret nu?</li>
+  <li>Hvordan kan fremtiden for internettet se ud?</li>
+  <li>Hvad kan jeg selv gøre for at forstå det bedre?</li>
+</ul>
+
+<!-- 
+Vi forventer at alt er gratis, men det er det ikke. Vi betaler bare med en anden valuta, nemlig vores personlig data. Og ikke nok med det. Hvis vi ikke tager aktivt del i internettet og forstår hvordan det fungerer, så mister vi det demokratiske aspekt af den virtuelle verden. 
+
+
+
+I vores dagligdag tager vi det givet. Internettet. Fri kommunikation gennem Smartphones. At vi kan trykke på en knap og få leveret mad direkte til døren. Flotte designede enheder med lækker brugergrænseflade har forvænt os: Al information *bør* kun være et klik væk.   -->
+
+<h3 id="hvordan-fungerer-internettet-egentlig">Hvordan fungerer internettet egentlig?!</h3>
+
+<p>Okay, så jeg trykker på en knap  og så sender jeg noget information over til en anden person, som så kan trykke på en knap og sende noget andet information af sted. Og så kan vi kommunikere over internettet ik?!</p>
+
+<p>Johh, sådan nogenlunde da…</p>
+
+<p>Da jeg som nyuddannet startede i it-branchen snart 10 år siden,<label for="mn-id-3" class="margin-toggle"> ⊕</label><input type="checkbox" id="mn-id-3" class="margin-toggle" /><span class="marginnote">Tænk sig, det føltes som i går, men tiden flyver jo når man er i godt selskab og nyder hvad man laver. </span> var meningen at jeg skulle være projektleder eller <em>it-finansgut</em>. Med en uddannelse fra CBS i <em>business and politics</em> var tanken med mit traineeship at jeg skulle styre it-projekter. Jeg blev dog bidt af den mere tekniske del af it og endte med at blive bindeled mellem forretning og udviklerne. Siden da har jeg gravet mig dybere ned i hvordan den software som vi bruger egentlig fungerer. Så for ca. to år siden satte jeg mig for at undersøge hvordan internettet fungerer eller rettere, hvordan det egentlig går til når vi kommunikerer over internettet. Fortællingen starter som altid med en god gang Googling</p>
+
+<h3 id="apier-og-dataskrabning">APIer og dataskrabning</h3>
+<p>Så hvad sker der rent faktisk når man trykker på en knap på internettet. Hvad sker der når du trykker her:</p>
+
+<iframe width="100%" height="144" frameborder="0" src="https://observablehq.com/embed/4b64ea95f8abf6ad?cells=viewof+clicks%2Cklik"></iframe>
+
+<p>Når du trykker på knappen interagerer den med den nedestående kode, som lægger 1 til det tidligere antal. Et <em>kald</em> bliver lavet via et API (Application Programming Interface). Det er rygraden af <strong><a href="https://hackernoon.com/apis-how-the-internet-works-behind-the-scenes-690288634c32">internettet</a></strong></p>
+
+<p>
+<iframe width="100%" height="676" frameborder="0" src="https://observablehq.com/embed/d4029bfa31ba86b8?cells=heatmap"></iframe>
+</p>
+
+<p>Hvad sker der her hvis jeg laver en margin note <label for="mn-id-2" class="margin-toggle"> ⊕</label><input type="checkbox" id="mn-id-2" class="margin-toggle" /><span class="marginnote">Tænk sig, det føltes som i går, men tiden flyver jo når man er i godt selskab og nyder hvad man laver. </span> hjælper det</p>
+
+<p>
+<iframe width="100%" height="676" frameborder="0" src="https://observablehq.com/embed/35ee031adc45ac47?cells=plottweets"></iframe>
+
+
+</p>
+:ET
