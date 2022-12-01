@@ -18,9 +18,18 @@
                 <img src="https://placekitten.com/640/360" class="img-fluid">
             </div>
             {% endif %}
+                
             <h1>{{ page.title}}</h1>
-            <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
-            {{ content }}
+            <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}
+            {% assign tags = page.tag | split: ', ' %}
+            <ul class="list-inline mb-0">
+                {% for t in tags %}
+                <li class="list-inline-item"><span class="btn btn-sm btn-outline-warning">{{ t }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </p>
+
 
             <div class="sticky-top-article mb-4">
                 <div class="card mb-4 bg-light border-0">
@@ -50,20 +59,16 @@
                             <!-- <div class="d-grid">
                                 <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
                             </div> -->
+                            <h5 class="text-primary">Del denne fortælling</h5>
                             {% include share.html %}
                         </div>
-
-                        {% assign tags = page.tag | split: ', ' %}
-                        <ul class="list-inline mb-0">
-                            {% for t in tags %}
-                            <li class="list-inline-item"><span class="btn btn-sm btn-outline-warning">{{ t }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-
                     </div>
                 </div>
             </div>
+       
+            {{ content }}
+
+            
         </div>
     </div>
     {% include print-footer.html %}

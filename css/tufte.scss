@@ -219,7 +219,8 @@ p > a {
     padding-bottom: 1px;
   } @else {
     // color: $contrast-color;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bolder;
   }
 }
 
