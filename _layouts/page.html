@@ -1,7 +1,18 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include head.html %}
 
-<h1>{{ page.title}}</h1>
-<p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
-{{ content }}
+<body class="group">
+  {% include topnavbar.html %}
+  
+  <div class="container">
+    <div class="article">
+        <h1>{{ page.title}}</h1>
+      {{ content }}
+    </div>
+  </div>
+  {% include print-footer.html %}
+  {% include footer.html %}
+</body>
+
+</html>
