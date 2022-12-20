@@ -121,10 +121,17 @@ a svg {
 }
 
 // THIS IS PERSONAL FOR HEADER END //
+h1,
+h2,
+h3 {
+  font-family: $sans-font;
+}
+
 h1 {
   color: $primary;
   text-decoration: underline;
 }
+
 h2,
 h3 {
   color: $primary;

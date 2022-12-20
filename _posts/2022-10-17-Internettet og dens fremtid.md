@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fremtidens internet er decentralt og tilhøre os alle"
+title:  "Fremtidens internet er decentralt og tilhøre os alle (eller gør det?)"
 date:   2022-10-17 01:18:01
 tag: Internettet, Web3
 intro: "Om du kan lide det eller ej så er det decentrale internet (baseret på blockchain teknologien) her. Det kan ikke længere ignoreres. I stedet er det tid til at forstå hvad Web3 er og hvilket enorme potentiale (og risici) teknologien har."
@@ -9,10 +9,17 @@ coverphoto: "https://images.pexels.com/photos/3183170/pexels-photo-3183170.jpeg?
 d3chartPlaceholder: "observablehq-BubbleChartName-b5329101"
 d3chartType: "Bubblechart"
 ---
+{% newthought 'Det er svært at forestille sig,' %}men der var en tid hvor internettet ikke var spået den store fremtid.
+Som en af internettets pionere **[Marc Andreesen](https://en.wikipedia.org/wiki/Marc_Andreessen)** forklarede, så var det (i starten af 90'erne) universalt kendt at internettet  ikke var noget som *normale* mennesker ville komme til at bruge.{% sidenote 'sn-id-1' 'Marc Andreesen forklarer om opfattelsen af internettet mellem 1992-1994: *"It was so universally known that the internet was not something that normal people were going to use"*, Podcast Making Sense **[#290 What went wrong?](https://www.samharris.org/podcasts/making-sense-episodes/290-what-went-wrong)** 16 min inde.' %} Folk som **[Bill Gates](https://en.wikipedia.org/wiki/Bill_Gates)** var stadig meget skeptiske og han kunne på daværende tidspunkt ikke se den store kommercielle potentiale i teknologien.{% sidenote 'sn-id-2' '*"I see little commercial potential for the internet for the next 10 years"*, sagt i 1994 **[Businessinsider](https://www.businessinsider.com/the-dumbest-things-bill-gates-ever-said-2016-4)**. Til Bill´s forsvar anderkendte han hurtigt sin fejl og året efter udsendte han notatet **[The Internet Tidal Wave](https://lettersofnote.com/2011/07/22/the-internet-tidal-wave/)** hvori han kalder internettet den vigtigste udvikling siden IBM PC´en blev introduceret i 1981.' %}. Marc Andreesen var dog aldrig i tvivl om dens kæmpe potentiale. Han var med til at udvikle den første grafiske webbrowser Mosaic og startede efterfølgende Netscape der lavede den første kommercielle browser Navigator, som var den mest brugte browser i det meste af 1990'erne.{% sidenote 'sn-id-3' 'Data er lidt svær at få fat i men denne artikel og video giver et godt indblik **[Most Popular Desktop Browsers 1996-2022](https://statisticsanddata.org/data/most-popular-browser-1996-2021/)**' %}. 
 
-{% newthought 'Min far skulle rejse halvvejs rundt om jorden,' %}for at få sin første emailadresse. Det var i 1994 og hele familien var rejst med ham til New Zealand, hvor han skulle undervise og forske. Det var lidt før internettet gjorde sit store indtog hos den brede offentlighed. Nu er det svært at forestille sig en hverdag uden internettet, men i sin spæde start var det forbeholdt universiteterne (og militæret) {% marginnote 'mn-id-1' '' %} . Det lå på det tidspunkt slet ikke i kortene at internettet ville blive så stor en succes. Som en af pionererne af internettet **[Marc Andreesen](https://en.wikipedia.org/wiki/Marc_Andreessen)** forklarede, så var det universalt kendt at internettet ikke var noget som *normale* mennesker ville komme til at bruge.{% sidenote 'sn-id-1' 'Marc Andreesen forklarer om opfattelsen af internettet mellem 1992-1994: *"It was so universally known that the internet was not something that normal people were going to use"*, Podcast Making Sense **[#290 What went wrong?](https://www.samharris.org/podcasts/making-sense-episodes/290-what-went-wrong)** 16 min inde.' %} Folk som **[Bill Gates](https://en.wikipedia.org/wiki/Bill_Gates)** var stadig meget skeptiske og han kunne på daværende tidspunkt ikke se den store kommercielle potentiale i teknologien.{% sidenote 'sn-id-2' '*"I see little commercial potential for the internet for the next 10 years"*, sagt i 1994 **[Businessinsider](https://www.businessinsider.com/the-dumbest-things-bill-gates-ever-said-2016-4)**. Til Bill´s forsvar anderkendte han hurtigt sin fejl og året efter udsendte han notatet **[The Internet Tidal Wave](https://lettersofnote.com/2011/07/22/the-internet-tidal-wave/)** hvori han kalder internettet den vigtigste udvikling siden IBM PC´en blev introduceret i 1981.' %} 
+Siden da har internettet ændret sig meget. Op igennem 1990'erne eksploderede brugen og brugerne internettet enorm{% marginnote 'mn-id-graph1' 'og som det kan ses nedenfor tog danskerne hurtigt internettet til sig' %}. Faktisk tog det for meget fart. Der blev postet så mange penge i internettet og internetrelaterede virksomheder at der opstod i it-boble, der sprang i 2000. Denne første version af internettet der normalt angives til at løbe fra 1995-2005 {note} kaldes Web1.0 og er defineret ved at give *læse rettigheder* til brugeren. Det var altså ...  
+Ud af askerne fra it-boblen kom Web2.0.  
 
-Marc Andreesen var dog aldrig i tvivl om dens kæmpe potentiale. Han var med til at udvikle den første grafiske webbrowser Mosaic og startede efterfølgende Netscape der lavede den første kommercielle browser Navigator, som var den mest brugte browser i det meste af 1990'erne.{% sidenote 'sn-id-1' 'Data er lidt svær at få fat i men denne artikel og video giver et godt indblik **[Most Popular Desktop Browsers 1996-2022](https://statisticsanddata.org/data/most-popular-browser-1996-2021/)**' %}
+
+<p>
+<iframe src="https://ourworldindata.org/grapher/share-of-individuals-using-the-internet?country=South+Asia~North+America~Sub-Saharan+Africa~East+Asia+and+Pacific~Middle+East+and+North+Africa~Europe+and+Central+Asia~Latin+America+and+Caribbean~DNK" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+</p>
+
  <!-- {% marginnote 'mn-id-2' 'ironisk nok var det Microsoft der med Internet Explorer i 1998 blev den mest brugte browser (de blev samme år sagsøgt for antitrust law, fordi de ) ' %} .
   -->
 Marc Andreesen og hans folk bøvlede dog med en stor udfordring som de aldrig fik løst. Netscape ønskede at lave en betalingsløsning i deres Navigator browser. Et plug-in til bank industrien således at man kunne tjene penge på at lave indhold på internettet. 
@@ -43,9 +50,7 @@ Internettet i sin Web1.0 form gav kun *læse rettigheder* til brugeren. Det var 
 
 I starten af 1990s begynder internetbrugere at tage fart {% sidenote 'sn-id-4' 'Our World in Data, *Share of the population using the internet*, 1990-2020. (https://ourworldindata.org/internet)' %}. 
 
-<p>
-<iframe src="https://ourworldindata.org/grapher/share-of-individuals-using-the-internet?country=South+Asia~North+America~Sub-Saharan+Africa~East+Asia+and+Pacific~Middle+East+and+North+Africa~Europe+and+Central+Asia~Latin+America+and+Caribbean~DNK" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-</p>
+
 
 Som det kan ses tog internettet fart i slutningen af 1990'erne. Faktisk tog det for meget fart. Der blev postet så mange penge i internettet og internetrelaterede virksomheder at der opstod i it-boble, der sprang i 2000. 
 Ud af askerne af denne boblen kom Web2.0.  
@@ -55,4 +60,4 @@ Grunden til at man markerer et skift i internettet fra Web1.0 til Web2.0 omkring
 Facebook, YouTube, Google gjorde sit indtog og internettet blev det format som vi kender nu {% marginnote 'mn-id-3' 'Udtrykket blev gjort popoulært af *Tim O´Reily* i 2004, som med artiklen **[What Is Web 2.0](https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html)** sammenlignede de tidligere *spillere* i Web01 med de nye' %}
 
 
-
+Min far skulle rejse halvvejs rundt om jorden for at få sin første emailadresse. Det var i 1994 og hele familien var rejst med ham til New Zealand, hvor han skulle undervise og forske. Det var lidt før internettet gjorde sit store indtog hos den brede offentlighed. Nu er det svært at forestille sig en hverdag uden internettet, men i sin spæde start var det forbeholdt universiteterne (og militæret) {% marginnote 'mn-id-1' '' %} . Det lå på det tidspunkt slet ikke i kortene at internettet ville blive så stor en succes. 
