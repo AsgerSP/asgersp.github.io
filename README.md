@@ -6,6 +6,10 @@ It is called imargin as in "in the margin" (danish translation).
 
 To see more information regarding the original them, please see https://github.com/clayh53/tufte-jekyll
 
+## External links
+Instead of the markdown I want to have links open in a new tab. Therefore I use the this standard for links: 
+<a href="[LINK]" target="_blank" rel="noopener">Link name</a>
+
 ## Development
 * install https://jekyllrb.com/
 * run `bundle exec jekyll serve`
