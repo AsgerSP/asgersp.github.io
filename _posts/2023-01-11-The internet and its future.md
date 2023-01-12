@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Fremtidens internet er decentralt og tilhøre os alle (eller gør det?)"
-date:   2022-10-17 01:18:01
-tag: Internettet, Web3
-intro: "Om du kan lide det eller ej så er det decentrale internet (baseret på blockchain teknologien) her. Det kan ikke længere ignoreres. I stedet er det tid til at forstå hvad Web3 er og hvilket enorme potentiale (og risici) teknologien har."
-beskrivelse: "Vores nuværende internet har udviklet sig til at være kontrolleret af nogle få store virksomheder, hvis mål ikke stemmer overens med det offentlige gode. Der er behov for en ny version af internettet, som er strukturelt anderledes. Et decentralt internet hvor folk ejer deres eget data er her allerede. På trods den store (legitime) skepsis er det livsnødvendigt at vi forstår hvad det er, så vi kan deltage i opbygningen af fremtidens internet"
+title:  "The future of the internet is decentralised and belongs to all of us (or does it?)"
+date:   2023-01-11 01:18:01
+tag: The Internet, Web3
+intro: "Whether you like it or not, the decentralised internet (based on the blockchain technology) is here to stay. It can no longer be ignored. Instead, it is time to understand what Web3 is and what huge potential is has."
+beskrivelse: "Our current internet has evolved to something different from its original intent. It is controlled by a handfull of huge tech companies, who‘s goal does not align with the public good. There is a need for a new version of the internet, that is structurally different. A decentralised internet where people own their own content and data; and that version is already here. Despit its large (legitimate) scepsis it is vital that we understand what Web3 is, so you can participate in building the internet of the future."
 coverphoto: "https://images.pexels.com/photos/3183170/pexels-photo-3183170.jpeg?w=640"
 d3chartPlaceholder: "observablehq-BubbleChartName-b5329101"
 d3chartType: "Bubblechart"
@@ -29,16 +29,10 @@ Det internet som vi kender i dag kan spores tilbage til starten af 1989 da Tim B
 
 Internettet i sin første version (Web1.0) var fokuseret på at *læse*. Det blev hovedsagligt brugt for at en få række mennesker skabte noget indhold på internettet som en masse mennesker læste. Hovedfokus var altså på læsbarheden på internettet og ikke interaktionen med indholdet. Dette kom i med vores nuværende version af internettet (Web2.0) der med har de sociale medier som drivkraft har fokus på både læse *og skrive*. 
 
-Web2.0 kom ud af askerne af it-boblen der sprang omkring 2000. Den fulgte en massiv investering af start-ups, hvor joken gik, at hvis man blot tilføjede dot-com til sit virksomheds navn, så fik man kastet penge i ansigtet.{% marginnote 'mn-id-dotcom' 'På engelsk kaldes it-boblen for <a href="https://en.wikipedia.org/wiki/Dot-com_bubble" target="_blank" rel="noopener">Dot-com</a> boblen' %} Grunden til at man markerer et skift i internettet fra Web1.0 til Web2.0 omkring år 2005 er at internettet, efter it-boblen, havde bevæget sig i en retning hvor man ikke kun kunne læse, men hvor man også fik *skrive rettigheder*. {% marginnote 'mn-id-2' 'Udtrykket blev opfundet af *Darcy DiNucci* allerede i 1999, som beskrev hvad der var på vej <a href="http://darcyd.com/fragmented_future.pdf" target="_blank" rel="noopener">Fragmented Future</a>' %} Facebook, YouTube, Google gjorde sit indtog og internettet blev det format som vi kender nu. {% marginnote 'mn-id-oreily' 'Udtrykket blev gjort popoulært af *Tim O´Reily* i 2004, som med artiklen <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html" target="_blank" rel="noopener">What Is Web 2.0</a> sammenlignede de tidligere *spillere* i Web01 med de nye' %}
+Web2.0 kom ud af askerne af it-boblen der sprang omkring 2000. Den fulgte en massiv investering af start-ups, hvor joken gik, at hvis man blot tilføjede dot-com til sit virksomheds navn, så fik man kastet penge i ansigtet.{% marginnote 'mn-id-dotcom' 'På engelsk kaldes it-boblen for <a href="https://en.wikipedia.org/wiki/Dot-com_bubble" target="_blank" rel="noopener">Dot-com</a> boblen' %} Grunden til at man markerer et skift i internettet fra Web1.0 til Web2.0 omkring år 2005 er at internettet, efter it-boblen, havde bevæget sig i en retning hvor man ikke kun kunne læse, men hvor man også fik *skrive rettigheder*. {% marginnote 'mn-id-2' 'Udtrykket blev opfundet af *Darcy DiNucci* allerede i 1999, som beskrev hvad der var på vej <a href="http://darcyd.com/fragmented_future.pdf" target="_blank" rel="noopener">Fragmented Future</a>' %} Facebook, YouTube, Google gjorde sit indtog og internettet blev det format som vi kender nu.{% marginnote 'mn-id-oreily' 'Udtrykket blev gjort popoulært af *Tim O´Reily* i 2004, som med artiklen <a href="https://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html" target="_blank" rel="noopener">What Is Web 2.0</a> sammenlignede de tidligere *spillere* i Web01 med de nye' %} 
 
-
-
-
- <!-- {% marginnote 'mn-id-2' 'ironisk nok var det Microsoft der med Internet Explorer i 1998 blev den mest brugte browser (de blev samme år sagsøgt for antitrust law, fordi de ) ' %} .
-  -->
-Marc Andreesen og hans folk bøvlede dog med en stor udfordring som de aldrig fik løst. Netscape ønskede at lave en betalingsløsning i deres Navigator browser. Et plug-in til bank industrien således at man kunne tjene penge på at lave indhold på internettet. 
-
-Det lykkedes aldrig og den eneste anden løsning var at udrulle reklamer på internettet således at dem der skabte indhold på internettet kunne blive *betalt*. Og det er der vi er i dag. Et internet der er drevet af reklamer. 
+### Problemet med vores nuværende internet
+Omdrejningspunktet for, hvad der er galt med vores nuværende internet, er reklamer. Det er ikke noget nyt at der er reklamer på internettet. Helt tilbage i sin spæde start da Marc Andreesen og hans folk i Netscape arbejde på Navigator browseren, ønskede de at lave en betalingsløsning til den. Et plug-in til bank industrien således at man kunne tjene penge på at lave indhold på internettet. Det lykkedes aldrig og den eneste anden løsning var at udrulle reklamer på internettet således at dem der skabte indhold på internettet kunne blive *betalt*. Og det er der vi er i dag. Et internet der er drevet af reklamer. 
 
 {% epigraph '"If you can‘t charge people for things you gotta run adds. And that‘s what happened."' 'Marc Andreesen' ' "What Went Wrong? Making Sense Podcast (22 min)" ' %}
 
@@ -77,3 +71,5 @@ G
 Min far skulle rejse halvvejs rundt om jorden for at få sin første emailadresse. Det var i 1994 og hele familien var rejst med ham til New Zealand, hvor han skulle undervise og forske. Det var lidt før internettet gjorde sit store indtog hos den brede offentlighed. Nu er det svært at forestille sig en hverdag uden internettet, men i sin spæde start var det forbeholdt universiteterne (og militæret) {% marginnote 'mn-id-1' '' %} . Det lå på det tidspunkt slet ikke i kortene at internettet ville blive så stor en succes. 
 
 {% marginnote 'mn-id-2' 'Som var med til at udvikle den første grafiske webbrowser <a href="https://www.ncsa.illinois.edu/research/project-highlights/ncsa-mosaic/" target="_blank" rel="noopener">Mosaic</a> og efterfølgende startede Netscape der med Navigator lavede første kommercielle browser, der var den mest brugte op gennem 1990‘erne <a href="https://statisticsanddata.org/data/most-popular-browser-1996-2021/" target="_blank" rel="noopener">Most Popular Desktop Browsers 1996-2022</a>' %} 
+
+https://thedatascientist.com/what-is-web3-a-beginners-guide-new-decentralized-web/

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Om &#8853
+title: About &#8853
 ---
 
 Dette blog-site er lavet af <a href="https://www.linkedin.com/in/asgerspedersen" target="_blank">Asger Steen</a>. På sin vis er det derfor lidt misvisende at vi på sitet skriver *vi* og *os*. Du kan tænke på det som den royale flertalsbetegnelse og som et håb om at sitet vil vokse og flere kræfter kommer indover.{% marginnote 'mn-id-1' 'Og så igen. Du er her jo, så er vi da to' %} 
