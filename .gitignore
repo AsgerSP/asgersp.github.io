@@ -3,4 +3,5 @@ _site
 .DS\_Store
 config.codekit
 node_modules/
-
+.jekyll-cache
+.firebase

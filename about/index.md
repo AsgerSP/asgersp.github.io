@@ -7,7 +7,7 @@ Dette blog-site er lavet af <a href="https://www.linkedin.com/in/asgerspedersen"
 
 Målet er at blive til et større *os* fremadrettet, men for nu må du nøjes med mig. 
 
-### Lidt om min begrundelse for at lave DigiTek <span>&#8704;</span>
+### Lidt om min begrundelse for at lave Democratic Tech <span>&#8704;</span>
 
 Jeg mener at det er vigtigt at den teknologiske forståelse bliver bredt ud så flere har forståelse og er engageret i dens tilblivelse: Teknologi **For alle** {% marginnote 'mn-id-2' 'Det matematiske symbol <span>&#8704;</span> betyder *for alle* og bruges på sitet udelukkende fordi jeg synes det ser fedt ud. Rent gramtisk det fuldkommen forkert at bruge symbolet i en sætning, men sådan er der jo så meget' %} {% sidenote 'sn-id-1' 'https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols#cite_note-AMS-3' %}. Mit håb er derfor at skabe en interesse for teknologien gennem denne blogsite og udbrede en større forståelse for dens konsekvenser. Jeg mener at dette er afgørende for at sikre at goderne ved den digitale revolution tilfalder alle og at de negative effekter holdes til et minimum. 
 
